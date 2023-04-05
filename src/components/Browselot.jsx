@@ -437,7 +437,7 @@ export default function Browselot() {
                         </div>
                         <div className="flex flex-col items-center pb-10">
                           <img
-                            className="mb-3 h-24 w-24 rounded-full shadow-lg"
+                            className="mb-3 h-[auto] w-[117px] rounded-full shadow-lg"
                             src={image.src}
                             alt={image.alt}
                           />
