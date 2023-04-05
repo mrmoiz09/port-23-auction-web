@@ -9,7 +9,7 @@ export const Navbars = () => {
           <div className="child-1">
             <Navbar fluid={true} rounded={true} className="bg-[#2E0D23]" style={{    background: "#2E0D23",
     borderRadius: "0px"}}>
-              <Navbar.Brand href="https://flowbite.com/">
+              <Navbar.Brand href="">
                 {/* <img
               // src="https://flowbite.com/docs/images/logo.svg"
               className="mr-3 h-6 sm:h-9"
@@ -34,7 +34,7 @@ export const Navbars = () => {
                   <Dropdown.Header>
                     <span className="block text-sm">Bonnie Green</span>
                     <span className="block truncate text-sm font-medium">
-                      name@flowbite.com
+                     daniel daniel auction
                     </span>
                   </Dropdown.Header>
                   <Dropdown.Item>Dashboard</Dropdown.Item>
@@ -50,20 +50,20 @@ export const Navbars = () => {
                   href="/navbars"
                   className=" font-[circular] text-white bg-[#B19676] rounded-full px-5 md:w-[55px] p-[2px] text-center"
                 >
-                  home
+                  Home
                 </Navbar.Link>
 
                 <Navbar.Link
                   className="text-white font-[circular] mr-3"
                   href="/navbars"
                 >
-                  archives
+                  Archives
                 </Navbar.Link>
                 <Navbar.Link
                   className="text-white font-[circular] mr-3"
                   href="/navbars"
                 >
-                  lots
+                  Lots
                 </Navbar.Link>
                 <Navbar.Link
                   className="text-white font-[circular] mr-3"
@@ -75,13 +75,13 @@ export const Navbars = () => {
                   className="text-white font-[circular] mr-3"
                   href="/navbars"
                 >
-                  cart
+                  Cart
                 </Navbar.Link>
                 <Navbar.Link
                   className="text-white font-[circular]"
                   href="/navbars"
                 >
-                  my-account
+                  My-Account
                 </Navbar.Link>
               </Navbar.Collapse>
             </Navbar>

@@ -19,14 +19,16 @@ export const Upcommingauctions = () => {
           <template x-for="auction in current_auctions">
             <a
               href="//"
-              class="group grid grid-cols-1 lg:grid-cols-4  dark:border-night-700 hover:shadow-lg rounded-lg transition ease-in-out duration-300 "
+              class="group grid grid-cols-1 lg:grid-cols-4 rounded-lg transition ease-in-out duration-300 "
               style={{ border: "none" }} >
-              <div class="col-span-3 lg:col-span-1" style={{ border: "none" }}>
+              <div class="col-span-3 lg:col-span-1" >
+                <div className="relative">
                 <img
                   src="auction.image"
-                  class="w-full rounded sticky top-0"
+                  class="w-full rounded sticky top-0" 
                   alt=""
                 />
+                </div>
               </div>
               <div class="p-4 col-span-3 lg:col-span-3 space-y-4">
                 <div class="border-b pb-4">
