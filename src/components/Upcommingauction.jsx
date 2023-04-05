@@ -5,7 +5,7 @@ export const Upcommingauctions = () => {
   return (
     <>
      
-     <h1 className="text-4xl font-[initial] tracking-tight text-gray-900" style={{marginLeft:"127px"}}>
+     <h1 className="text-4xl font-[initial] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] " >
   Upcomming Auctions
   </h1>
       
@@ -19,8 +19,8 @@ export const Upcommingauctions = () => {
           <template x-for="auction in current_auctions">
             <a
               href="//"
-              class="group grid grid-cols-1 lg:grid-cols-4 border border-gray-200 dark:border-night-700 hover:shadow-lg rounded-lg transition ease-in-out duration-300 "
-            >
+              class="group grid grid-cols-1 lg:grid-cols-4  dark:border-night-700 hover:shadow-lg rounded-lg transition ease-in-out duration-300 "
+              style={{ border: "none" }} >
               <div class="col-span-3 lg:col-span-1" style={{ border: "none" }}>
                 <img
                   src="auction.image"
