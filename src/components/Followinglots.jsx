@@ -57,7 +57,7 @@ const images = [
 export const Followinglots = () => {
   return (
     <>
-      <h1 className="text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] mb-[9.375rem]">
+      <h1 className="  sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] mb-[9.375rem]">
         Lots you are following
       </h1>
       <div className="mx-auto md:mt-[4rem]  md:mb-[110px]">
