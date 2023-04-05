@@ -61,7 +61,7 @@ export const Followinglots = () => {
         Lots you are following
       </h1>
       <div className="mx-auto md:mt-[4rem]  md:mb-[110px] sm:mb-[50px]  ">
-        <div className="flex flex-row  overflow-x-auto md:w-[134vh] mx-auto">
+        <div className="flex flex-row  overflow-x-auto md:w-[134vh] mx-auto sm:relative Bottom:[30px]">
           {images.map((image) => (
             <div key={image.id} className="lg:col-span-3 ml-[19px]">
               <div className="max-w-sm">
