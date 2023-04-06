@@ -74,7 +74,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -97,7 +97,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row sm:flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -120,7 +120,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -143,7 +143,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -166,7 +166,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
