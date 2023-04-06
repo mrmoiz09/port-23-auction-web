@@ -68,79 +68,117 @@ export const Archivepage = () => {
       <div className="card-section-rpw">
         {/* card01  */}
         <div className="p-8 ">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
-  <img src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg" alt="Product Image" className="object-contain h-48 w-96" />
-  <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
-    <div className=" md:ml-[33px]">
-      <h2 className="font-bold text-xl mb-2">Product Name</h2>
-      <p className="text-gray-700 mb-4">Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.</p>
-    </div>
-    <div className="border-t pt-4">
-      <p className="text-gray-700 font-bold">Price: $19.99</p>
-    </div>
-  </div>
-</div>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
+            <img
+              src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg"
+              alt="Product Image"
+              className="object-contain h-48 w-96"
+            />
+            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+              <div className=" md:ml-[33px]">
+                <h2 className="font-bold text-xl mb-2">Product Name</h2>
+                <p className="text-gray-700 mb-4">
+                  Greek, Roman, Byzantine and Medieval Coins, Seals,
+                  Antiquities.
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <p className="text-gray-700 font-bold">Price: $19.99</p>
+              </div>
+            </div>
+          </div>
         </div>
         {/* card 01 end  */}
         {/* card01  */}
         <div className="p-8 ">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
-  <img src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg" alt="Product Image" className="object-contain h-48 w-96" />
-  <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
-    <div className=" md:ml-[33px]">
-      <h2 className="font-bold text-xl mb-2">Product Name</h2>
-      <p className="text-gray-700 mb-4">Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.</p>
-    </div>
-    <div className="border-t pt-4">
-      <p className="text-gray-700 font-bold">Price: $19.99</p>
-    </div>
-  </div>
-</div>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
+            <img
+              src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg"
+              alt="Product Image"
+              className="object-contain h-48 w-96"
+            />
+            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+              <div className=" md:ml-[33px]">
+                <h2 className="font-bold text-xl mb-2">Product Name</h2>
+                <p className="text-gray-700 mb-4">
+                  Greek, Roman, Byzantine and Medieval Coins, Seals,
+                  Antiquities.
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <p className="text-gray-700 font-bold">Price: $19.99</p>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* card 01 end  */}{/* card01  */}
+        {/* card 01 end  */}
+        {/* card01  */}
         <div className="p-8 ">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
-  <img src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg" alt="Product Image" className="object-contain h-48 w-96" />
-  <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
-    <div className=" md:ml-[33px]">
-      <h2 className="font-bold text-xl mb-2">Product Name</h2>
-      <p className="text-gray-700 mb-4">Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.</p>
-    </div>
-    <div className="border-t pt-4">
-      <p className="text-gray-700 font-bold">Price: $19.99</p>
-    </div>
-  </div>
-</div>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
+            <img
+              src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg"
+              alt="Product Image"
+              className="object-contain h-48 w-96"
+            />
+            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+              <div className=" md:ml-[33px]">
+                <h2 className="font-bold text-xl mb-2">Product Name</h2>
+                <p className="text-gray-700 mb-4">
+                  Greek, Roman, Byzantine and Medieval Coins, Seals,
+                  Antiquities.
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <p className="text-gray-700 font-bold">Price: $19.99</p>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* card 01 end  */}{/* card01  */}
+        {/* card 01 end  */}
+        {/* card01  */}
         <div className="p-8 ">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
-  <img src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg" alt="Product Image" className="object-contain h-48 w-96" />
-  <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
-    <div className=" md:ml-[33px]">
-      <h2 className="font-bold text-xl mb-2">Product Name</h2>
-      <p className="text-gray-700 mb-4">Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.</p>
-    </div>
-    <div className="border-t pt-4">
-      <p className="text-gray-700 font-bold">Price: $19.99</p>
-    </div>
-  </div>
-</div>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
+            <img
+              src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg"
+              alt="Product Image"
+              className="object-contain h-48 w-96"
+            />
+            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+              <div className=" md:ml-[33px]">
+                <h2 className="font-bold text-xl mb-2">Product Name</h2>
+                <p className="text-gray-700 mb-4">
+                  Greek, Roman, Byzantine and Medieval Coins, Seals,
+                  Antiquities.
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <p className="text-gray-700 font-bold">Price: $19.99</p>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* card 01 end  */}{/* card01  */}
+        {/* card 01 end  */}
+        {/* card01  */}
         <div className="p-8 ">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
-  <img src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg" alt="Product Image" className="object-contain h-48 w-96" />
-  <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
-    <div className=" md:ml-[33px]">
-      <h2 className="font-bold text-xl mb-2">Product Name</h2>
-      <p className="text-gray-700 mb-4">Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.</p>
-    </div>
-    <div className="border-t pt-4">
-      <p className="text-gray-700 font-bold">Price: $19.99</p>
-    </div>
-  </div>
-</div>
+          <div className="bg-white rounded-lg shadow-lg overflow-hidden flex md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
+            <img
+              src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg"
+              alt="Product Image"
+              className="object-contain h-48 w-96"
+            />
+            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+              <div className=" md:ml-[33px]">
+                <h2 className="font-bold text-xl mb-2">Product Name</h2>
+                <p className="text-gray-700 mb-4">
+                  Greek, Roman, Byzantine and Medieval Coins, Seals,
+                  Antiquities.
+                </p>
+              </div>
+              <div className="border-t pt-4">
+                <p className="text-gray-700 font-bold">Price: $19.99</p>
+              </div>
+            </div>
+          </div>
         </div>
         {/* card 01 end  */}
       </div>
