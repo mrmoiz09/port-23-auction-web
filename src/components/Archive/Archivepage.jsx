@@ -54,11 +54,11 @@ export const Archivepage = () => {
       </div>
       {/*  */}
 
-      <div className="bg-slate-200 md:p-[37px]">
+      <div className="bg-slate-200 md:p-[37px] sm:p-[2px]">
         {/* font-size: 21px; position: absolute; font-family: initial; margin-left:
         43px; */}
         <h1
-          className="font-[initial] md:absolute lg:absolute sm:relative sm:inline  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
+          className="  sm:inline	 font-[initial] md:absolute lg:absolute sm:relative  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
           style={{ borderBottom: "2px solid" }}
         >
           Archives{" "}
