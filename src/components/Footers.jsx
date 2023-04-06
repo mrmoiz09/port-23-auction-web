@@ -60,7 +60,7 @@ const Footers = () => {
         />
       </div>
       <button
-        className="px-5 py-3 text-sm font-medium text-center text-white bg-[#b196762b] rounded-lg cursor-pointer  focus:ring-4 focus:ring-[beige]-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="px-5 py-3 text-sm font-medium text-center text-white bg-[#b19676] rounded-lg cursor-pointer  focus:ring-4 focus:ring-[beige]-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         onClick={handleSubmit}
       >
         Subscribe

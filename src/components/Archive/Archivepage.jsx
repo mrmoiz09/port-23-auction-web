@@ -58,7 +58,7 @@ export const Archivepage = () => {
         {/* font-size: 21px; position: absolute; font-family: initial; margin-left:
         43px; */}
         <h1
-          className="  sm:inline	 font-[initial] md:absolute lg:absolute sm:relative  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
+          className="  	 font-[initial] md:absolute lg:absolute sm:relative  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
           style={{ borderBottom: "2px solid" }}
         >
           Archives{" "}
@@ -97,7 +97,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row sm:flex-col justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="p-4 flex flex-row sm:flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
