@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Upcomming.css";
+// import "../css/Upcomming.css";
 
 export const Upcommingauctions = () => {
   return (

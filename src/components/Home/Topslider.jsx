@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'flowbite-react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-
-import '../css/slider.css';
+// import "../"
+// import '../css/slider.css';
 
 const images = [
   {

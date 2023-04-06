@@ -1,14 +1,19 @@
 import React from "react";
 import { Navbar, Dropdown, Avatar, Label, TextInput } from "flowbite-react";
 import { HiMail } from "react-icons/hi";
+import { Link } from "react-router-dom";
 export const Navbars = () => {
   return (
     <>
       <div className="sticky top-0 z-10">
         <div className="flex flex-col">
           <div className="child-1">
-            <Navbar fluid={true} rounded={true} className="bg-[#2E0D23]" style={{    background: "#2E0D23",
-    borderRadius: "0px"}}>
+            <Navbar
+              fluid={true}
+              rounded={true}
+              className="bg-[#2E0D23]"
+              style={{ background: "#2E0D23", borderRadius: "0px" }}
+            >
               <Navbar.Brand href="">
                 {/* <img
               // src="https://flowbite.com/docs/images/logo.svg"
@@ -34,7 +39,7 @@ export const Navbars = () => {
                   <Dropdown.Header>
                     <span className="block text-sm">Bonnie Green</span>
                     <span className="block truncate text-sm font-medium">
-                     daniel daniel auction
+                      daniel daniel auction
                     </span>
                   </Dropdown.Header>
                   <Dropdown.Item>Dashboard</Dropdown.Item>
@@ -46,18 +51,15 @@ export const Navbars = () => {
                 <Navbar.Toggle />
               </div>
               <Navbar.Collapse>
-                <Navbar.Link
-                  href="/navbars"
-                  className=" font-[circular] text-white bg-[#B19676] rounded-full px-5 md:w-[55px] p-[2px] text-center"
-                >
-                  Home
+                <Navbar.Link className=" font-[circular] text-white bg-[#B19676] rounded-full px-5 md:w-[55px] p-[2px] text-center">
+                  <Link to="/"> Home</Link>
                 </Navbar.Link>
 
                 <Navbar.Link
                   className="text-white font-[circular] mr-3"
-                  href="/navbars"
+                
                 >
-                  Archives
+                 <Link to="/archive"> Archive</Link>
                 </Navbar.Link>
                 <Navbar.Link
                   className="text-white font-[circular] mr-3"
