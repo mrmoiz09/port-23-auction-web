@@ -63,11 +63,11 @@ const Header = () => {
               </Link>
               <Link to="/archive">
                 {" "}
-                <li>Auctions</li>
+                <li>Archive </li>
               </Link>
               <Link to="/lots">
                 {" "}
-                <li>Consign</li>
+                <li>Lots</li>
               </Link>
               <Link to="/Productpage">
                 {" "}
@@ -94,7 +94,7 @@ const Header = () => {
               </Link>
               <Link to="/archive">
                 {" "}
-                <li className="text-white">Auctions</li>
+                <li className="text-white">Archive </li>
               </Link>
               <Link to="/lots">
                 {" "}
