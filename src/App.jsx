@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Archives } from "./components/Archives";
 import { Lotpage } from "./components/Lotpage";
 import ProductPage from "./components/Lotes/Productpage";
+import { Example } from "./components/Faqpage/Example";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -20,6 +22,7 @@ function App() {
 <Route path="/archive" element={ <Archives/>}/>
 <Route path="/lots" element={<Lotpage/>}/>
 <Route path="/Productpage" element={<ProductPage/>}/>
+<Route path="/faq" element={<Example/>}/>
 
 </Routes>
       

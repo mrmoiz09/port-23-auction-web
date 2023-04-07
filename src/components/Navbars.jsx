@@ -61,15 +61,18 @@ export const Navbars = () => {
                 <Navbar.Link className="text-white font-[circular]  hover:bg-sky-700 mr-3">
                   <Link to="/lots">Lots</Link>
                 </Navbar.Link>
+
+                <Link to="/faq">
                 <Navbar.Link
                   className="text-white font-[circular]  hover:bg-sky-700 mr-3"
-                  href="/navbars"
+                 
                 >
                   FAQS
                 </Navbar.Link>
+                </Link>
                 <Navbar.Link
                   className="text-white font-[circular]   hover:bg-sky-700 mr-3"
-                  href="/navbars"
+                 
                 >
                   Cart
                 </Navbar.Link>
