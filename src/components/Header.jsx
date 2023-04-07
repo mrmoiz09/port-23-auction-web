@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // Item
 // Link
-import "../css/nav.css"
+import "../css/nav.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +59,7 @@ const Header = () => {
             <ul className="flex items-center gap-8 text-white text-lg font-medium list-none font-semibold">
               <Link to="/">
                 {" "}
-                  <li className="bord-r">Home </li>  
+                <li className="bord-r">Home </li>
               </Link>
               <Link to="/archive">
                 {" "}
@@ -87,13 +87,31 @@ const Header = () => {
       </div>
       {isOpen && (
         <div className="sm:hidden">
-          <ul className="mt-2 py-3 px-2 text-center text-lg font-medium list-none font-semibold">
-            <li>Home</li>
-            <li>Auctions</li>
-            <li>Consign</li>
-            <li>FAQ</li>
-            <li>About Us</li>
-            <li>Contact</li>
+          <ul className="mt-2 py-3 px-2 text-center text-lg font-medium list-none font-semibold flex flex-col gap-1">
+          <Link to="/">
+                {" "}
+                <li className="bord-r">Home </li>
+              </Link>
+              <Link to="/archive">
+                {" "}
+                <li className="text-white">Auctions</li>
+              </Link>
+              <Link to="/lots">
+                {" "}
+                <li className="text-white">Lots</li>
+              </Link>
+              <Link to="/Productpage">
+                {" "}
+                <li className="text-white">FAQ</li>
+              </Link>
+              <Link to="/faq">
+                {" "}
+                <li className="text-white">About Us</li>
+              </Link>
+              <Link to="/cartpage">
+                {" "}
+                <li className="text-white">Contact</li>
+              </Link>
           </ul>
         </div>
       )}
