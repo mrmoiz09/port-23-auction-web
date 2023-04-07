@@ -8,7 +8,7 @@ import {
   PlusIcon,
 } from "@heroicons/react/20/solid";
 import { Card, Dropdown } from "flowbite-react";
-
+//  ddmdmdmdm
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
   { name: "Best Rating", href: "#", current: false },
@@ -133,7 +133,7 @@ export default function Browselots() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   return (
-    <div className="bg-white shadow-x md:w-[80%]   md:mx-auto sm:w-[autp]">
+    <div className="bg-white shadow-x md:w-[80%]   md:mx-auto sm:w-[auto]">
       <div>
         {/* Mobile filter dialog */}
         <Transition.Root show={mobileFiltersOpen} as={Fragment}>

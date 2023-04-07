@@ -51,36 +51,30 @@ export const Navbars = () => {
                 <Navbar.Toggle />
               </div>
               <Navbar.Collapse>
-                <Navbar.Link className=" font-[circular] text-white bg-[#B19676] rounded-full px-5 md:w-[55px] p-[2px] text-center">
+                <Navbar.Link className=" font-[circular] text-white bg-[#B19676]   hover:bg-sky-700  rounded-full px-5 md:w-[55px] p-[2px] text-center">
                   <Link to="/"> Home</Link>
                 </Navbar.Link>
 
-                <Navbar.Link
-                  className="text-white font-[circular] mr-3"
-                
-                >
-                 <Link to="/archive"> Archive</Link>
+                <Navbar.Link className="text-white font-[circular]  hover:bg-sky-700 mr-3">
+                  <Link to="/archive"> Archive</Link>
+                </Navbar.Link>
+                <Navbar.Link className="text-white font-[circular]  hover:bg-sky-700 mr-3">
+                  <Link to="/lots">Lots</Link>
                 </Navbar.Link>
                 <Navbar.Link
-                  className="text-white font-[circular] mr-3"
-                  href="/navbars"
-                >
-                  Lots
-                </Navbar.Link>
-                <Navbar.Link
-                  className="text-white font-[circular] mr-3"
+                  className="text-white font-[circular]  hover:bg-sky-700 mr-3"
                   href="/navbars"
                 >
                   FAQS
                 </Navbar.Link>
                 <Navbar.Link
-                  className="text-white font-[circular] mr-3"
+                  className="text-white font-[circular]   hover:bg-sky-700 mr-3"
                   href="/navbars"
                 >
                   Cart
                 </Navbar.Link>
                 <Navbar.Link
-                  className="text-white font-[circular]"
+                  className="text-white font-[circular]  hover:bg-sky-700"
                   href="/navbars"
                 >
                   My-Account

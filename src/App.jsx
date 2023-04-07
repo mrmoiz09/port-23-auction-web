@@ -4,6 +4,8 @@ import Footers from "./components/Footers";
 import { Home } from "./components/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Archives } from "./components/Archives";
+import { Lotpage } from "./components/Lotpage";
+import ProductPage from "./components/Lotes/Productpage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -16,6 +18,9 @@ function App() {
 
 <Route path="/" element={ <Home />}/>
 <Route path="/archive" element={ <Archives/>}/>
+<Route path="/lots" element={<Lotpage/>}/>
+<Route path="/Productpage" element={<ProductPage/>}/>
+
 </Routes>
       
      

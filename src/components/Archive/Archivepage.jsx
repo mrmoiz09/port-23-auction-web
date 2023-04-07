@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { FaSearch } from "react-icons/fa";
 export const Archivepage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
@@ -26,7 +27,7 @@ export const Archivepage = () => {
           className="flex md:mr-[30px] mb-7 mt-[9px]"
         >
           <input
-            className="bg-white rounded-l-md px-4 py-2 border border-gray-300 w-1/2 mr-2 border rounded-lg md:h-[35px] drop-shadow-lg"
+            className="bg-white rounded-l-md px-4 py-2 border-gray-300 w-1/2 mr-2 border rounded-lg md:h-[35px] drop-shadow-lg"
             type="text"
             style={{ borderRadius: "17px" }}
             placeholder="Jump for Lot"
@@ -74,7 +75,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="table-column	p-4 flex md:flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -97,7 +98,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="table-column	p-4 flex md:flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -120,7 +121,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="sm:table-column	p-4 flex md:flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -143,7 +144,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="table-column	p-4 flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
@@ -166,7 +167,7 @@ export const Archivepage = () => {
               alt="Product Image"
               className="object-contain h-48 w-96"
             />
-            <div className="p-4 flex flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
+            <div className="mains sm:table-column	p-4 flex md:flex-row  justify-center md:p-[57px] md:gap-[17.25rem] ">
               <div className=" md:ml-[33px]">
                 <h2 className="font-bold text-xl mb-2">Product Name</h2>
                 <p className="text-gray-700 mb-4">
