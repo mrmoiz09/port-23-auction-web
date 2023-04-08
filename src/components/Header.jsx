@@ -22,7 +22,7 @@ const Header = () => {
             <button
               onClick={toggleNav}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-purple-700 focus:outline-none focus:bg-purple-700 focus:text-white transition duration-150 ease-in-out"
+              className="inline-flex  absolute right-0 p-2 rounded- focus:outline-none focus:text-white transition duration-150 ease-in-out"
             >
               {isOpen ? (
                 <svg
@@ -75,11 +75,11 @@ const Header = () => {
               </Link>
               <Link to="/faq">
                 {" "}
-                <li>About Us</li>
+                <li>Cart</li>
               </Link>
               <Link to="/cartpage">
                 {" "}
-                <li>Contact</li>
+                <li>My account</li>
               </Link>
             </ul>
           </div>
@@ -106,11 +106,11 @@ const Header = () => {
               </Link>
               <Link to="/faq">
                 {" "}
-                <li className="text-white">About Us</li>
+                <li className="text-white">Cart</li>
               </Link>
               <Link to="/cartpage">
                 {" "}
-                <li className="text-white">Contact</li>
+                <li className="text-white">My-Account</li>
               </Link>
           </ul>
         </div>
