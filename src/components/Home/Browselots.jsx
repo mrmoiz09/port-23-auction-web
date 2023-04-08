@@ -73,14 +73,14 @@ const filters = [
 const images = [
   {
     id: 1,
-    src: "https://flowbite.com/docs/images/people/profile-picture-3.jpg",
+    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
     alt: "Bonnie image",
     title: "rthereum",
     subtitle: "binance",
   },
   {
     id: 2,
-    src: "https://flowbite.com/docs/images/people/profile-picture-3.jpg",
+    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
     alt: "Bonnie image",
     title: "rthereum",
     subtitle: "binance",

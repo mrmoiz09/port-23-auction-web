@@ -57,9 +57,7 @@ const images = [
 export const Followinglots = () => {
   return (
     <>
-      <h1 className="  sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] mb-[9.375rem]">
-        Lots you are following
-      </h1>
+      <h1 class=" md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] "> Lots you are following</h1>
       <div className="mx-auto md:mt-[4rem]  md:mb-[110px] sm:mb-[50px]  ">
         <div className="flex flex-row  overflow-x-auto md:w-[134vh] mx-auto sm:relative Bottom:[30px]">
           {images.map((image) => (

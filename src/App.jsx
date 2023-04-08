@@ -10,6 +10,8 @@ import { Example } from "./components/Faqpage/Example";
 // import {Navbars}  from "./components/Header"
 import { Cartpage } from "./components/Cart/Cartpage";
 import Header from "./components/Header";
+import { Accountpage } from "./components/Accountpage";
+
 
 
 function App() {
@@ -17,9 +19,10 @@ function App() {
 
   return (
     <>
+   
       <BrowserRouter>
-<Header/>
 
+<Header/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/archive" element={<Archives />} />
@@ -27,6 +30,8 @@ function App() {
           <Route path="/Productpage" element={<ProductPage />} />
           <Route path="/faq" element={<Example />} />
           <Route path="/cartpage" element={<Cartpage/>}/>
+          <Route path="/account" element={<Accountpage/>}/>
+
         </Routes>
 
         <Footers />

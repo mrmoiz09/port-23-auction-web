@@ -22,7 +22,7 @@ const Header = () => {
             <button
               onClick={toggleNav}
               type="button"
-              className="inline-flex  absolute right-0 p-2 rounded- focus:outline-none focus:text-white transition duration-150 ease-in-out"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-purple-700 focus:outline-none focus:bg-purple-700 focus:text-white transition duration-150 ease-in-out"
             >
               {isOpen ? (
                 <svg
@@ -69,17 +69,17 @@ const Header = () => {
                 {" "}
                 <li>Lots</li>
               </Link>
-              <Link to="/Productpage">
+              <Link to="/faq">
                 {" "}
                 <li>FAQ</li>
               </Link>
-              <Link to="/faq">
+              <Link to="/cartpage">
                 {" "}
                 <li>Cart</li>
               </Link>
-              <Link to="/cartpage">
+              <Link to="/account">
                 {" "}
-                <li>My account</li>
+                <li>My Account</li>
               </Link>
             </ul>
           </div>
@@ -88,29 +88,29 @@ const Header = () => {
       {isOpen && (
         <div className="sm:hidden">
           <ul className="mt-2 py-3 px-2 text-center text-lg font-medium list-none font-semibold flex flex-col gap-1">
-          <Link to="/">
+<Link to="/">
                 {" "}
                 <li className="bord-r">Home </li>
               </Link>
               <Link to="/archive">
                 {" "}
-                <li className="text-white">Archive </li>
+                <li>Archive </li>
               </Link>
               <Link to="/lots">
                 {" "}
-                <li className="text-white">Lots</li>
-              </Link>
-              <Link to="/Productpage">
-                {" "}
-                <li className="text-white">FAQ</li>
+                <li>Lots</li>
               </Link>
               <Link to="/faq">
                 {" "}
-                <li className="text-white">Cart</li>
+                <li>FAQ</li>
               </Link>
               <Link to="/cartpage">
                 {" "}
-                <li className="text-white">My-Account</li>
+                <li>Cart</li>
+              </Link>
+              <Link to="/account">
+                {" "}
+                <li>My Account</li>
               </Link>
           </ul>
         </div>
