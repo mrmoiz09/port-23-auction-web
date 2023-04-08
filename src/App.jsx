@@ -11,27 +11,24 @@ import { Example } from "./components/Faqpage/Example";
 import { Cartpage } from "./components/Cart/Cartpage";
 import Header from "./components/Header";
 import { Accountpage } from "./components/Accountpage";
-
-
+import { Yourcart } from "./components/Cart/Yourcart";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-   
       <BrowserRouter>
-
-<Header/>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/archive" element={<Archives />} />
           <Route path="/lots" element={<Lotpage />} />
           <Route path="/Productpage" element={<ProductPage />} />
           <Route path="/faq" element={<Example />} />
-          <Route path="/cartpage" element={<Cartpage/>}/>
-          <Route path="/account" element={<Accountpage/>}/>
-
+          <Route path="/cartpage" element={<Cartpage />} />
+          <Route path="/account" element={<Accountpage />} />
+          <Route path="/mycart" element={<Yourcart />} />
         </Routes>
 
         <Footers />

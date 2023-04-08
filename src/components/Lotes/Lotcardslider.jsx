@@ -73,7 +73,7 @@ export const Lotcardslider = () => {
                 <Card>
                   <div className="flex justify-end px-4 pt-4 custom-card custom-pos">
                     <Tooltip content="Add to archive" placement="top" style="light">
-                      <Button className="bg-[transparent]  hover:bg-[transparent]" style={{border:"none"}}>
+                      <Button className=" bg-white  hover:bg-white  border-0	border-transparent	" style={{border:"none"}}>
                         <FaRegBookmark color="#2E0D23" />
                       </Button>
                     </Tooltip>{" "}
