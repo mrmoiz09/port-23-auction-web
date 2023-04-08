@@ -38,9 +38,9 @@ export const Example = () => {
 
   return (
    <>
-    <div className="w-[60%] mx-auto m-auto p-[4rem]">
+    <div className="md:w-[60%] mx-auto m-auto md:p-[4rem] mb-[3rem] mt-7 ">
       {accordionItems.map((item, index) => (
-        <div key={index} className="border-b border-gray-200">
+        <div key={index} className="border-b border-gray-200 accordin rounded-md mb-[20px]">
           <button
             className="m-[5px] flex justify-between items-center w-full px-4 py-3 text-lg font-medium text-left bg-white hover:bg-gray-50 focus:outline-none focus:shadow-outline-blue"
             onClick={() => setActiveIndex(activeIndex === index ? -1 : index)}

@@ -135,7 +135,7 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className=" child-col child-2 md:w-[100%] lg:w-[91%] bg-slate-100 md:h-[100vh] rounded-3xl drop-shadow relative right-5 child-form ">
+        <div className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form ">
           <div id="summary" class="w-[100%] px-8 py-10 ">
             <h1 class="font-[initial] text-3xl  pb-8 w-[90%]">Buy now</h1>
             <div className="flex flex-col  items-center">
@@ -147,12 +147,12 @@ const ProductPage = () => {
             <hr className="border border-gray-950 mt-8" />
             <div class="flex flex-col  mt-10 mb-5">
               <h2 class="font-[initial] text-sm uppercase">Items 3</h2>
-              <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[15rem] gap-a">
+              <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
                 <span className="font-[initial] text-2xl">Current Bid</span>
                 <span className="font-[initial] text-2xl">700euro</span>
               </div>
 
-              <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[15rem] mt-[4rem] gap-a">
+              <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[11rem] mt-[4rem] gap-a">
                 <span className="font-[initial] text-2xl">Starting price</span>
                 <span className="font-[initial] text-2xl">20 usd</span>
               </div>
@@ -167,8 +167,8 @@ const ProductPage = () => {
                 Login or Singup
               </button>
             </div>
-            <hr className="border border-gray-950 mt-8" />
-            <p className="middle text-[green] mt-8"> how to bid</p>
+            {/* <hr className="border border-gray-950 mt-8" /> */}
+            {/* <p className="middle text-[green] mt-8"> how to bid</p> */}
           </div>
         </div>
       </div>
