@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import "../CssFolder/custom.css"
 // import "../CssFolder/custom.css"
-import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
+// Link
+
 export const Cartpage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
@@ -108,15 +109,17 @@ export const Cartpage = () => {
                 <span class="font-[initial] text-2xl">Total Price:</span>
                 <span class="font-[initial] text-2xl">2100euro</span>
               </div>
+              <Link to="/mycart" >
               <button class="bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full">
                 Proceed to check-out
               </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
       {/* modal popup below  */}
-      procced to check out
+      {/* procced to check out */}
     </>
   );
 };
