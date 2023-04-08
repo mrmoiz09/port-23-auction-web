@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import "../CssFolder/custom.css"
+// import "../CssFolder/custom.css"
 import { FaSearch } from "react-icons/fa";
 export const Cartpage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
