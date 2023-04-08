@@ -18,7 +18,48 @@ export const Archivepage = () => {
     console.log("Jump for Lot:", jumpForLot);
     console.log("Search:", search);
   };
+// products slider data 
+const products = [
+  {
+    id: 1,
+    name: "Product Name",
+    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+    price: 19.99,
+  },
+  {
+    id: 2,
+    name: "Product Name",
+    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+    price: 19.99,
+  },
+  {
+    id: 3,
+    name: "Product Name",
+    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+    price: 19.99,
+  }
+  ,{
+    id: 4,
+    name: "Product Name",
+    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+    price: 19.99,
+  },
+  {
+    id: 5,
+    name: "Product Name",
+    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+    price: 19.99,
+  }
 
+
+]
+// ended /
+  
   return (
     <>
       <div className="flex flex-row p-4 justify-end">
@@ -68,21 +109,23 @@ export const Archivepage = () => {
       {/*  */}
       
       <div className="flex-1">
-        <div className="p-8">
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg">
-            <img src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg" alt="Product Image" className="object-contain h-48 w-full md:h-auto md:w-96" />
-            <div className="table-column p-4 md:flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem]">
-              <div className="md:ml-[33px]">
-                <h2 className="font-bold text-xl mb-2">Product Name</h2>
-                <p className="text-gray-700 mb-4">Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.</p>
-              </div>
-              <div className="border-t pt-4">
-                <p className="text-gray-700 font-bold">Price: $19.99</p>
-              </div>
+    <div className="p-8">
+      {products.map((product) => (
+        <div key={product.id} style={{marginTop:"30px"}}  className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]">
+          <img src={product.image} alt="Product Image" className="object-contain h-48 w-full md:h-auto md:w-96" />
+          <div className="table-column p-4 md:flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem]">
+            <div className="md:ml-[33px]">
+              <h2 className="font-bold text-xl mb-2">{product.name}</h2>
+              <p className="text-gray-700 mb-4">{product.description}</p>
+            </div>
+            <div className="border-t pt-4">
+              <p className="text-gray-700 font-bold">Price: ${product.price.toFixed(2)}</p>
             </div>
           </div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
       
     </>
   );

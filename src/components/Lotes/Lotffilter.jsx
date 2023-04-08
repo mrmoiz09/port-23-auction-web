@@ -16,6 +16,7 @@ export const Lotffilter = () => {
   ]
   
   return (
+    
     <>
     <div className="space-y-3 lg:w-1/5 lg:px-2 lg:space-y-4 shadow-x rounded-lg">
     <label htmlFor="bitcoin1" className="inline-flex items-centerborder-b-2 border-slate-500 mt-6">
@@ -41,7 +42,7 @@ export const Lotffilter = () => {
     <div className="cursor-pointer mt-6">
       <h3
         href="#"
-        className=" font-medium text-gray-500 dark:text-gray-300 hover:underline cursor-pointer font-[initial] flex"
+        className=" font-medium text-gray-500 dark:text-gray-300 hover:underline cursor-pointer font-[initial] flex flex-row"
         onClick={handleCateogrizeToggle}
       >
         Cateogrize
@@ -52,42 +53,7 @@ export const Lotffilter = () => {
 
       {iscateogrizeOpen && (
         <div className="ml-4 space-y-2">
-          <label
-            htmlFor="bitcoin1"
-            className="inline-flex items-center"
-          >
-            <input
-              type="radio"
-              id="bitcoin1"
-              name="bitcoin"
-              className="form-radio"
-            />
-            <span className="ml-2">Bitcoin Option 1</span>
-          </label>
-          <label
-            htmlFor="bitcoin2"
-            className="inline-flex items-center"
-          >
-            <input
-              type="radio"
-              id="bitcoin2"
-              name="bitcoin"
-              className="form-radio"
-            />
-            <span className="ml-2">Bitcoin Option 2</span>
-          </label>
-          <label
-            htmlFor="bitcoin3"
-            className="inline-flex items-center"
-          >
-            <input
-              type="radio"
-              id="bitcoin3"
-              name="bitcoin"
-              className="form-radio"
-            />
-            <span className="ml-2">Bitcoin Option 3</span>
-          </label>
+          
           <label
             htmlFor="bitcoin4"
             className="inline-flex items-center"
