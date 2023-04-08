@@ -59,27 +59,27 @@ const Header = () => {
             <ul className="flex items-center gap-8 text-white text-lg font-medium list-none font-semibold">
               <Link to="/">
                 {" "}
-                <li className="bord-r">Home </li>
+                <li    className="bord- text white ">Home </li>
               </Link>
               <Link to="/archive">
                 {" "}
-                <li>Archive </li>
+                <li  className="text-white" >Archive </li>
               </Link>
               <Link to="/lots">
                 {" "}
-                <li>Lots</li>
+                <li  className="text-white" >Lots</li>
               </Link>
               <Link to="/faq">
                 {" "}
-                <li>FAQ</li>
+                <li  className="text-white" >FAQ</li>
               </Link>
               <Link to="/cartpage">
                 {" "}
-                <li>Cart</li>
-              </Link>
+                <li  className="text-white" >Cart</li>
+              </Link> 
               <Link to="/account">
                 {" "}
-                <li>My Account</li>
+                <li  >My Account</li>
               </Link>
             </ul>
           </div>
@@ -90,27 +90,27 @@ const Header = () => {
           <ul className="mt-2 py-3 px-2 text-center text-lg font-medium list-none font-semibold flex flex-col gap-1">
 <Link to="/">
                 {" "}
-                <li className="bord-r">Home </li>
+                <li  className="text-white" onClick={toggleNav}>Home </li>
               </Link>
               <Link to="/archive">
                 {" "}
-                <li>Archive </li>
+                <li className="text-white" onClick={toggleNav}>Archive </li>
               </Link>
               <Link to="/lots">
                 {" "}
-                <li>Lots</li>
+                <li className="text-white" onClick={toggleNav}>Lots</li>
               </Link>
               <Link to="/faq">
                 {" "}
-                <li>FAQ</li>
+                <li className="text-white" onClick={toggleNav}>FAQ</li>
               </Link>
               <Link to="/cartpage">
                 {" "}
-                <li>Cart</li>
+                <li className="text-white" onClick={toggleNav}>Cart</li>
               </Link>
               <Link to="/account">
                 {" "}
-                <li>My Account</li>
+                <li className="text-white" onClick={toggleNav}>My Account</li>
               </Link>
           </ul>
         </div>

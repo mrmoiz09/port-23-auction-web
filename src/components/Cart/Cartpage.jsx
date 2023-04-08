@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "../CssFolder/custom.css"
 import { FaSearch } from "react-icons/fa";
 export const Cartpage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
@@ -38,11 +39,11 @@ export const Cartpage = () => {
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
           <div className="flex flex-col justify-start lg:flex-col gap-16  md:mb-[170px]">
-            <div className="flex flex-col gap-8 lg:w-2/4 mx-auto m-auto">
+            <div className="flex flex-col gap-8 lg:w-2/4 mx-auto m-auto ">
               <img
                 src={activeImg}
                 alt=""
-                className="w-full md:h-[245px] aspect-square object-cover rounded-xl"
+                className="w-full custom-img22  md:h-[245px] aspect-square object-cover rounded-xl"
               />
               <div className="flex flex-row justify-bcenter h-24">
                 <img
@@ -62,7 +63,7 @@ export const Cartpage = () => {
               </div>
             </div>
             {/* ABOUT */}
-            <div className="flex flex-col gap-4 lg:w-2/4 align-middle relative left-[50px]">
+            <div className="flex flex-col gap-4 lg:w-2/4 align-middle relative md:left-[50px] custom-relative">
               <div>
                 <span className=" text-violet-600 font-semibold">
                   COIN NAME

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Productslider } from "../Lotes/Productslider";
+
 const ProductPage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
@@ -68,11 +69,15 @@ const ProductPage = () => {
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
           <div className="flex flex-col justify-start lg:flex-col gap-16  md:mb-[170px]">
+
+
+
+            
             <div className="flex flex-col gap-8 lg:w-2/4 mx-auto m-auto">
               <img
                 src={activeImg}
                 alt=""
-                className="w-full md:h-[245px] aspect-square object-cover rounded-xl"
+                className="w-full md:h-[300px] aspect-square object-cover rounded-xl  custom-img-3"
               />
               <div className="flex flex-row justify-bcenter h-24">
                 <img
@@ -100,13 +105,7 @@ const ProductPage = () => {
                 <h1 className="text-3xl font-bold">auction bid </h1>
               </div>
               <p className="text-gray-700">
-                Con un'ammortizzazione incredibile per sostenerti in tutti i
-                tuoi chilometri, Invincible 3 offre un livello di comfort
-                elevatissimo sotto il piede per aiutarti a dare il massimo oggi,
-                domani e oltre. Questo modello incredibilmente elastico e
-                sostenitivo, è pensato per dare il massimo lungo il tuo percorso
-                preferito e fare ritorno a casa carico di energia, in attesa
-                della prossima corsa.
+                Con un'er sostenerti in tutti i a, in attesa
               </p>
               <h6 className="text-2xl font-semibold">$ 199.00</h6>
               <div className="flex flex-row items-center gap-12">
@@ -135,8 +134,8 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form ">
-          <div id="summary" class="w-[100%] px-8 py-10 ">
+        <div className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form "  style={{width:"max-content"}}  >
+          <div id="summary" class=" px-8 py-10 " style={{width:"max-content"}}>
             <h1 class="font-[initial] text-3xl  pb-8 w-[90%]">Buy now</h1>
             <div className="flex flex-col  items-center">
               <span className="font-[initial] text-[25px]">40 euro</span>

@@ -9,8 +9,10 @@ import {
   PlusIcon,
 } from "@heroicons/react/20/solid";
 import { FaRegBookmark } from "react-icons/fa";
+// Link
 
 import { Card,Button } from "flowbite-react";
+import { Link } from "react-router-dom";
 //  ddmdmdmdm
 const sortOptions = [
   { name: "Most Popular", href: "#", current: true },
@@ -456,18 +458,22 @@ export default function Browselots() {
                       {image.subtitle}
                     </span>
                     <div className="mt-4 flex space-x-3 lg:mt-6">
-                      <a
-                        href="#"
+                     <Link to="/archive">
+                      <button
+                        
                         className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "
                       >
-                         <span className="relative left-[4px]" >Archive</span>  
-                      </a>
-                      <a
-                        href="#"
+                         <span className="relative left-[4px]" >Archives </span>  
+                      </button>
+                      </Link>
+                      <Link to ="/Productpage">
+                      <button
+                        
                         className="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                       >
                      <span className="relative left-[4px]" >Bid now</span>  
-                      </a>
+                      </button>
+                      </Link>
                     </div>
                   </div>
                 </Card>

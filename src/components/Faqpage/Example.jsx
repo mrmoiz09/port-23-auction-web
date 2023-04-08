@@ -30,6 +30,10 @@ const accordionItems = [
     {
       title: 'HOW TO PLACE A BID? (PRE BID)',
       content: 'This is the content of item 2'
+    },
+    {
+      title: 'HOW TO PLACE A BID? (PRE BID)',
+      content: 'This is the content of item 2'
     }
   ];
   
