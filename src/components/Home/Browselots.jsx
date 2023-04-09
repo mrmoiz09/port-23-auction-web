@@ -461,7 +461,7 @@ export default function Browselots() {
                      <Link to="/archive">
                       <button
                         
-                        className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "
+                        className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
                       >
                          <span className="relative left-[4px]" >Archives </span>  
                       </button>

@@ -1,0 +1,16 @@
+.cartstyle{
+
+    background: #f1f5f9;
+    height: 65px;
+    border-radius: 8px;
+    width: 176vh;
+    padding: 11px;
+    margin-top: 24px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+@media only screen and (max-width: 767px) {
+.cartstyle{
+overflow-x: hidden;
+    width: auto;
+}
+  }

@@ -45,7 +45,7 @@ export const Lotestock = () => {
                   </h4>
                   <p class="text-blue-500">$16.55</p>
 
-                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
+                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
                 </div>
 
 
@@ -61,7 +61,7 @@ export const Lotestock = () => {
                   </h4>
                   <p class="text-blue-500">$16.55</p>
 
-                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
+                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
                 </div>
 
 
@@ -79,7 +79,7 @@ export const Lotestock = () => {
                   </h4>
                   <p class="text-blue-500">$16.55</p>
 
-                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
+                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
                 </div>
 
 
@@ -106,7 +106,7 @@ export const Lotestock = () => {
                   </h4>
                   <p class="text-blue-500">$12.55</p>
 
-                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
+                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
                 </div>
                 <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto h-[108%] rounded shadow-lg">
                   <img
@@ -118,7 +118,7 @@ export const Lotestock = () => {
                     lorrem 1psum deial etc
                   </h4>
                   <p class="text-blue-500">$12.55</p>
-                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
+                  <div class="mt-4 flex space-x-3 lg:mt-6"><a href="#" class="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "><span class="relative left-[4px]">Archive</span></a><a href="#" class="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"><span class="relative left-[4px]">Bid now</span></a></div>
                 </div>
                 {/*  */}
 

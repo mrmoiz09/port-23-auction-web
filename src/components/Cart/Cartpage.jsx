@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import "../CssFolder/custom.css"
+import "../CssFolder/custom.css";
 import { Link } from "react-router-dom";
+import "../CssFolder/Cartstyle.css"
 // Link
 
 export const Cartpage = () => {
@@ -18,7 +19,7 @@ export const Cartpage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Jump for Lot:", jumpForLot);
+    console.log("Jump for Lot:", search);
     console.log("Search:", search);
   };
 
@@ -35,7 +36,7 @@ export const Cartpage = () => {
 
   return (
     <>
-      <h1 class="  sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] mb-[3rem]">
+      <h1 class=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
         Cart
       </h1>
       <div className="parent flex md:flex-row parent-col">
@@ -45,7 +46,7 @@ export const Cartpage = () => {
               <img
                 src={activeImg}
                 alt=""
-                className="w-full custom-img22  md:h-[245px] aspect-square object-cover rounded-xl"
+                className="w-full custom-img22  md:h-[228px] aspect-square object-cover rounded-xl"
               />
               <div className="flex flex-row justify-bcenter h-24">
                 <img
@@ -64,6 +65,7 @@ export const Cartpage = () => {
                 {/* <img src={images.img4} alt="" className='w-[auto] h-24 rounded-md cursor-pointer mr-3' onClick={() => setActiveImage(images.img4)}/> */}
               </div>
             </div>
+            <hr className="border " />
             {/* ABOUT */}
             <div className="flex flex-col gap-4 lg:w-2/4 align-middle relative md:left-[50px] custom-relative">
               <div>
@@ -80,13 +82,15 @@ export const Cartpage = () => {
                 attesa della prossima corsa.
               </p>
               <h6 className="text-2xl font-semibold">$ 199.00</h6>
-              
             </div>
           </div>
         </div>
 
         <div className=" child-col child-2  md:h-[54vh] rounded-3xl drop-shadow relative right-5 child-form ">
-          <div id="summary" class="w- px-8 py-10   bg-slate-100 ">
+          <div
+            id="summary"
+            class="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
+          >
             <h1 class="font-[initial] text-3xl  pb-5 text-center md:mb-5">
               Pricing details
             </h1>
@@ -109,10 +113,10 @@ export const Cartpage = () => {
                 <span class="font-[initial] text-2xl">Total Price:</span>
                 <span class="font-[initial] text-2xl">2100euro</span>
               </div>
-              <Link to="/mycart" >
-              <button class="bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full">
-                Proceed to check-out
-              </button>
+              <Link to="/mycart">
+                <button class="bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full mx-auto relative top-2 m-auto flex-row" style={{margin:"auto"}}>
+                  Proceed to check-out
+                </button>
               </Link>
             </div>
           </div>

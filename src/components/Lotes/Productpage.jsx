@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Productslider } from "../Lotes/Productslider";
-
+import "../CssFolder/custom.css"
 const ProductPage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
