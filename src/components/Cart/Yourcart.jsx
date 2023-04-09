@@ -75,7 +75,7 @@ export const Yourcart = () => {
 
       {/*  */}
 
-      <h1 class=" w-[100%]  md:mt-[-13px]    lg:mt-[-13px]   cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial]  tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem "> Your Cart</h1>
+      <h1 className=" w-[100%]  md:mt-[-13px]    lg:mt-[-13px]   cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial]  tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem "> Your Cart</h1>
       {/*  */}
 
      <div>

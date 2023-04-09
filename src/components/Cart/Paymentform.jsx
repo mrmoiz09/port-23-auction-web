@@ -25,7 +25,7 @@ export const Paymentform = () => {
   return (
     <>
     <hr className="border" />
-    <h1 class=" cartstyle sm:relative w-[100%]  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">Payment</h1>
+    <h1 className=" cartstyle sm:relative w-[100%]  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">Payment</h1>
       
       <form
         onSubmit={handleSubmit}

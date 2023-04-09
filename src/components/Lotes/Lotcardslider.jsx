@@ -61,7 +61,7 @@ const images = [
 export const Lotcardslider = () => {
   return (
    <>
-   <h1 class="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
+   <h1 className="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
         {" "}
        Popular
       </h1>

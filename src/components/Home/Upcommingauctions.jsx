@@ -11,84 +11,84 @@ export const Upcommingauctions = () => {
       
       
     
-      <section class="py-10 mx-auto w-[80%]">
+      <section className="py-10 mx-auto w-[80%]">
         <div
-          class="space-y-4 scrollbar box-sx"
+          className="space-y-4 scrollbar box-sx"
           style={{ height: "50vh", overflow: "scroll" }}
         >
           <template x-for="auction in current_auctions">
             <a
               href="//"
-              class="group grid grid-cols-1 lg:grid-cols-4 rounded-lg transition ease-in-out duration-300 "
+              className="group grid grid-cols-1 lg:grid-cols-4 rounded-lg transition ease-in-out duration-300 "
               style={{ border: "none" }} >
-              <div class="col-span-3 lg:col-span-1" >
+              <div className="col-span-3 lg:col-span-1" >
                 <div className="relative">
                 <img
                   src="auction.image"
-                  class="w-full rounded sticky top-0" 
+                  className="w-full rounded sticky top-0" 
                   alt=""
                 />
                 </div>
               </div>
-              <div class="p-4 col-span-3 lg:col-span-3 space-y-4">
-                <div class="border-b pb-4">
+              <div className="p-4 col-span-3 lg:col-span-3 space-y-4">
+                <div className="border-b pb-4">
                   <p
                     x-text="auction.title"
-                    class="text-2xl tracking-tight font-bold group-hover:text-yellow-500 dark:group-hover:text-yellow-300 transition ease-in-out duration-300 inline"
+                    className="text-2xl tracking-tight font-bold group-hover:text-yellow-500 dark:group-hover:text-yellow-300 transition ease-in-out duration-300 inline"
                   ></p>
-                  <p class="text-lg text-yellow-500 dark:text-yellow-300 block inline">
+                  <p className="text-lg text-yellow-500 dark:text-yellow-300 block inline">
                     <br />
                     <span x-text="auction.count_all_items"></span> Lots
                   </p>
                   <template x-if="auction.planned_starting_formatted != '-'">
                     <p
-                      class="mt-1 text-sm text-gray-500 dark:text-gray-300"
+                      className="mt-1 text-sm text-gray-500 dark:text-gray-300"
                       x-text="'('+ auction.planned_starting_formatted + ' -  ' + auction.planned_ending_formatted + ')'"
                     ></p>
                   </template>
                 </div>
-                <div class="text-sm" x-html="auction.description"></div>
+                <div className="text-sm" x-html="auction.description"></div>
               </div>
             </a>
           </template>
           <a
-            class="group grid grid-cols-1 lg:grid-cols-4 gap-6 p-4 bg-white dark:bg-night-900 border border-gray-200 dark:border-night-700 hover:shadow-lg rounded-lg transition ease-in-out duration-300"
+            className="group grid grid-cols-1 lg:grid-cols-4 gap-6 p-4 bg-white dark:bg-night-900 border border-gray-200 dark:border-night-700 hover:shadow-lg rounded-lg transition ease-in-out duration-300"
             href="lots?auction_id=80"
           >
-            <div class="col-span-3 lg:col-span-1">
+            <div className="col-span-3 lg:col-span-1">
               <img
-                class="w-full rounded"
+                className="w-full rounded"
                 src="https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg"
                 alt=""
               />
             </div>
-            <div class="p-4 col-span-3 lg:col-span-3 space-y-4">
-              <div class="border-b pb-4">
+            <div className="p-4 col-span-3 lg:col-span-3 space-y-4">
+              <div className="border-b pb-4">
                 <p
                   x-text="auction.title"
-                  class="text-2xl tracking-tight font-bold group-hover:text-yellow-500 dark:group-hover:text-yellow-300 transition ease-in-out duration-300 inline"
+                  className="text-2xl tracking-tight font-bold group-hover:text-yellow-500 dark:group-hover:text-yellow-300 transition ease-in-out duration-300 inline"
                 >
                   Auction 80 - Premium Coins &amp; Banknotes of The World{" "}
                 </p>
-                <p class="text-lg text-yellow-500 dark:text-yellow-300 block inline">
+                <p className="text-lg text-yellow-500 dark:text-yellow-300 block inline">
                   <br />
                   <span x-text="auction.count_all_items">1926</span> Lots
                 </p>
                 <template x-if="auction.planned_starting_formatted != '-'">
                   <p
-                    class="mt-1 text-sm text-gray-500 dark:text-gray-300"
+                    className="mt-1 text-sm text-gray-500 dark:text-gray-300"
                     x-text="'('+ auction.planned_starting_formatted + ' -  ' + auction.planned_ending_formatted + ')'"
                   ></p>
                 </template>
                 <p
-                  class="mt-1 text-sm text-gray-500 dark:text-gray-300"
+                  className="mt-1 text-sm text-gray-500 dark:text-gray-300"
                   x-text="'('+ auction.planned_starting_formatted + ' -  ' + auction.planned_ending_formatted + ')'"
                 >
                   
                   (21.03.2023 10:35 - 06.04.2023 21:00)
                 </p>
               </div>
-              <div class="text-sm" x-html="auction.description">
+              <div className="text-sm" x-html="auction.description">
                 <p>Dear Friends,</p>
                 <p>
                   {" "}

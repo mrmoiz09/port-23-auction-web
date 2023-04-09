@@ -35,7 +35,7 @@ const images = [
 export default function Topslider() {
   return (
     <>
-      <div className="h-[42rem] sm:h-64 xl:h-[42rem] 2xl:h-[42rem] md:drop-shadow-xl rounded-lg">
+      <div className="h-[auto] sm:h-64 xl:h-[42rem] 2xl:h-[42rem]  rounded-lg w-[70%] mx-auto m-auto">
         <Carousel 
           className="my-carousel"
           leftControl={<FaChevronLeft />}

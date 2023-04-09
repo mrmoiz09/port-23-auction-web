@@ -36,7 +36,7 @@ export const Cartpage = () => {
 
   return (
     <>
-      <h1 class=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
+      <h1 className=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
         Cart
       </h1>
       <div className="parent flex md:flex-row parent-col">
@@ -89,32 +89,32 @@ export const Cartpage = () => {
         <div className=" child-col child-2  md:h-[54vh] rounded-3xl drop-shadow relative right-5 child-form ">
           <div
             id="summary"
-            class="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
+            className="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
           >
-            <h1 class="font-[initial] text-3xl  pb-5 text-center md:mb-5">
+            <h1 className="font-[initial] text-3xl  pb-5 text-center md:mb-5">
               Pricing details
             </h1>
             <div className="flex flex-col gap-3 ">
-              <div class="box  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
-                <span class="font-[initial] text-2xl">Product Price:</span>
-                <span class="font-[initial] text-2xl">700euro</span>
+              <div className="box  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
+                <span className="font-[initial] text-2xl">Product Price:</span>
+                <span className="font-[initial] text-2xl">700euro</span>
               </div>
               {/*  */}
-              <div class="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
-                <span class="font-[initial] text-2xl">Current Bid:</span>
-                <span class="font-[initial] text-2xl">700euro</span>
+              <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
+                <span className="font-[initial] text-2xl">Current Bid:</span>
+                <span className="font-[initial] text-2xl">700euro</span>
               </div>
-              <div class="box flex flex-row p-[12px] justify-center md:gap-[15rem] gap-a">
-                <span class="font-[initial] text-2xl">VAT:</span>
-                <span class="font-[initial] text-2xl">700euro</span>
+              <div className="box flex flex-row p-[12px] justify-center md:gap-[15rem] gap-a">
+                <span className="font-[initial] text-2xl">VAT:</span>
+                <span className="font-[initial] text-2xl">700euro</span>
               </div>
               <hr />
-              <div class="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a mt-2">
-                <span class="font-[initial] text-2xl">Total Price:</span>
-                <span class="font-[initial] text-2xl">2100euro</span>
+              <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a mt-2">
+                <span className="font-[initial] text-2xl">Total Price:</span>
+                <span className="font-[initial] text-2xl">2100euro</span>
               </div>
               <Link to="/mycart">
-                <button class="bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full mx-auto relative top-2 m-auto flex-row" style={{margin:"auto"}}>
+                <button className="bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full mx-auto relative top-2 m-auto flex-row" style={{margin:"auto"}}>
                   Proceed to check-out
                 </button>
               </Link>

@@ -135,8 +135,8 @@ const ProductPage = () => {
         </div>
 
         <div className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form "  style={{width:"max-content"}}  >
-          <div id="summary" class=" px-8 py-10 " style={{width:"max-content"}}>
-            <h1 class="font-[initial] text-3xl  pb-8 w-[90%]">Buy now</h1>
+          <div id="summary" className=" px-8 py-10 " style={{width:"max-content"}}>
+            <h1 className="font-[initial] text-3xl  pb-8 w-[90%]">Buy now</h1>
             <div className="flex flex-col  items-center">
               <span className="font-[initial] text-[25px]">40 euro</span>
               <button className="bg-[#2e0d23] text-white font-semibold p-[9px] w-[90&] rounded-xl h-full">
@@ -144,8 +144,8 @@ const ProductPage = () => {
               </button>
             </div>
             <hr className="border border-gray-950 mt-8" />
-            <div class="flex flex-col  mt-10 mb-5">
-              <h2 class="font-[initial] text-sm uppercase">Items 3</h2>
+            <div className="flex flex-col  mt-10 mb-5">
+              <h2 className="font-[initial] text-sm uppercase">Items 3</h2>
               <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
                 <span className="font-[initial] text-2xl">Current Bid</span>
                 <span className="font-[initial] text-2xl">700euro</span>
@@ -158,7 +158,7 @@ const ProductPage = () => {
             </div>
             <hr className="border border-gray-950 mt-8" />
             <div className="flex flex-col  items-center">
-              <h1 className='class="font-[sans-serif] md:mt-[26px] md:ml-[-16rem]text-3xl  pb-8 uppercase'>
+              <h1 className='className="font-[sans-serif] md:mt-[26px] md:ml-[-16rem]text-3xl  pb-8 uppercase'>
                 place a bid
               </h1>
 
