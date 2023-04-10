@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "../CssFolder/Custom.css"
+// import "../CssFolder/Custom.css"
 import { FaRegBookmark } from "react-icons/fa";
 import { Card, Dropdown, Tooltip, Button } from "flowbite-react";
 

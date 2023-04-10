@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { FaSearch } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export const Archivepage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
@@ -18,48 +19,56 @@ export const Archivepage = () => {
     console.log("Jump for Lot:", jumpForLot);
     console.log("Search:", search);
   };
-// products slider data 
-const products = [
-  {
-    id: 1,
-    name: "Product Name",
-    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
-    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-    price: 19.99,
-  },
-  {
-    id: 2,
-    name: "Product Name",
-    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
-    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-    price: 19.99,
-  },
-  {
-    id: 3,
-    name: "Product Name",
-    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
-    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-    price: 19.99,
-  }
-  ,{
-    id: 4,
-    name: "Product Name",
-    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
-    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-    price: 19.99,
-  },
-  {
-    id: 5,
-    name: "Product Name",
-    description: "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
-    image: "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-    price: 19.99,
-  }
+  // products slider data
+  const products = [
+    {
+      id: 1,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      price: 19.99,
+    },
+    {
+      id: 2,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      price: 19.99,
+    },
+    {
+      id: 3,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      price: 19.99,
+    },
+    {
+      id: 4,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      price: 19.99,
+    },
+    {
+      id: 5,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      price: 19.99,
+    },
+  ];
+  // ended /
 
-
-]
-// ended /
-  
   return (
     <>
       <div className="flex flex-row p-4 justify-end">
@@ -107,28 +116,44 @@ const products = [
         </h1>
       </div>
       {/*  */}
-      
+
       <div className="flex-1">
-    <div className="p-8">
-      {products.map((product) => (
-        <div key={product.id} style={{marginTop:"30px"}}  className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[85%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]">
-          <img src={product.image} alt="Product Image" className="object-contain h-48 w-full md:h-auto md:w-96" />
-          <div className="table-column p-4 md:flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem]">
-            <div className="md:ml-[33px]">
-              <h2 className="font-bold text-xl mb-2">{product.name}</h2>
-              <p className="text-gray-700 mb-4">{product.description}</p>
+        <div className="p-8">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              style={{ marginTop: "30px" }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[85%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]"
+            >
+              <img
+                src={product.image}
+                alt="Product Image"
+                className="object-contain h-48 w-full md:h-auto md:w-96"
+              />
+              <div className="table-column p-4 md:flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem]">
+                <div className="md:ml-[33px]">
+                  <h2 className="font-bold text-xl mb-2">{product.name}</h2>
+                  <p className="text-gray-700 mb-4">{product.description}</p>
+                </div>
+                <hr className="absolute sm:border-1 sm:block hr22" />
+
+                <div className="border-t pt-4">
+                  <p className="text-gray-700 font-bold">
+              <Link to="/Bidpage">     <span className="bg-[#2e0d23] cursor-pointer	 p-[10px] rounded-lg text-white">
+                      {" "}
+                      bid now{" "}
+                    </span>{" "}</Link> 
+                    <span className="relative md:top-6 left-[84px] lg:top-6 lg:left-5 archive-text">
+                      {" "}
+                      ${product.price.toFixed(2)}
+                    </span>{" "}
+                  </p>
+                </div>
+              </div>
             </div>
-            <hr className="absolute hr22"/>
-            
-            <div className="border-t pt-4">
-              <p className="text-gray-700 font-bold"><span className="bg-[#2e0d23] p-[10px] rounded-lg text-white"> Current Bid </span >    <span className="relative top-6 left-5">     ${product.price.toFixed(2)}</span>                                           </p>
-            </div>
-          </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
-      
+      </div>
     </>
   );
 };

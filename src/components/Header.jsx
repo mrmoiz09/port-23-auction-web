@@ -1,59 +1,84 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// Item
-// Link
 import "../css/headernav.css";
-import { FaGripLines } from "react-icons/fa";
-const callme = () => {
-  const bar = document.getElementById("bar");
-  const navBar = document.getElementById("nav-bar");
-
-  bar.addEventListener("click", () => {
-    navBar.classList.toggle("show");
-  });
-};
+import { FaGripLines, FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const [showNav, setShowNav] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setShowNav(width > 767);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleToggle = () => {
+    setShowNav(!showNav);
+  };
+
   return (
     <>
-      <div class="container">
-        <div class="logo-section">
-          <h1 class="logo">bacephalus numismatic</h1>
-          <div class="icon">
-            <FaGripLines id="bar" onClick={callme} />
-            {/* <i class="fa-thin fa-bars" style="color: #ebe5e5;"></i> */}
+      <div className="container custom-container">
+        <div className="logo-section">
+          <h1 className="logo">bacephalus numismatic</h1>
+          <div className="">
+            {showNav ? (
+              <FaTimes
+                className="lg:hidden text-white iconss"
+                onClick={handleToggle}
+              />
+            ) : (
+              <FaGripLines
+                className="lg:hidden text-white iconss"
+                onClick={handleToggle}
+              />
+            )}
           </div>
         </div>
-        <div class="nav-bar" id="nav-bar">
+        <div
+          className={showNav ? "nav-bar show" : "nav-bar"}
+          id="nav-bar"
+        >
           <ul>
-            <Link    to="/"  >
-              {" "}
-              <li>Home</li>
+            <Link to="/">
+              <li className="li li-links" onClick={handleToggle}>
+                Home
+              </li>
             </Link>
-            <hr className="hr border " />
-            <Link    to="/archive"  >
-              {" "}
-              <li>Archives</li>{" "}
+            <hr className="hr border" />
+            <Link to="/archive">
+              <li className="li li-links" onClick={handleToggle}>
+                Archives
+              </li>
             </Link>
-            <hr className="hr border " />
-            <Link    to="/lots"  >
-              {" "}
-              <li>Lots</li>{" "}
+            <hr className="hr border" />
+            <Link to="/lots">
+              <li className="li li-links" onClick={handleToggle}>
+                Lots
+              </li>
             </Link>
-            <hr className="hr border " />
-            <Link    to="/faq"  >
-              {" "}
-              <li>Faq</li>{" "}
+            <hr className="hr border" />
+            <Link to="/faq">
+              <li className="li li-links" onClick={handleToggle}>
+                Faq
+              </li>
             </Link>
-            <hr className="hr border " />
-            <Link    to="/Cartpage"  >
-              {" "}
-              <li>Cart</li>{" "}
+            <hr className="hr border" />
+            <Link to="/Cartpage">
+              <li className="li li-links" onClick={handleToggle}>
+                Cart
+              </li>
             </Link>
-            <hr className="hr border " />
-            <Link    to="/account"  >
-              {" "}
-              <li>MY Account</li>{" "}
+            <hr className="hr border" />
+            <Link to="/account">
+              <li className="li li-links" onClick={handleToggle}>
+                MY Account
+              </li>
             </Link>
           </ul>
         </div>

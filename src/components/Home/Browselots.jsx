@@ -181,7 +181,7 @@ export default function Browselots() {
                     >
                       <span className="sr-only">Close menu</span>
                       <button className="h-6 w-6" aria-hidden="true">
-                        open
+close
                       </button>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </button>

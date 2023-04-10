@@ -42,7 +42,7 @@ export const Lotestock = () => {
                   <div className="mt-4 flex space-x-3 lg:mt-6 ">
                     <a
                       href="#"
-                      className=" md:w-[7rem] custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
+                      className=" md:w-[6rem] custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
                     >
                       <span className="relative left-[4px]">current bid</span>
                     </a>

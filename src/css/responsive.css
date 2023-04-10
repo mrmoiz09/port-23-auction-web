@@ -1,0 +1,98 @@
+@media only screen and (min-width: 1280px) {
+  .custom-container {
+    /* background-color: red; */
+    /* max-width: 1905px; */
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* CSS rules for mobile phones */
+  .logo {
+    font-size: 18px;
+    position: relative;
+    top: -8px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .icon {
+    position: absolute;
+    right: 38px;
+    top: -8px;
+    opacity: 0.5;
+    width: 29px;
+  }
+  .li,
+  .link {
+    font-size: 16px;
+  }
+  .hr2 {
+    display: none;
+  }
+}
+
+.custom-width {
+  height: 38px;
+  width: 89px;
+}
+
+.custom-pos {
+  position: relative;
+  top: -24px;
+  left: 39px;
+}
+.custom-img {
+  height: 98px;
+  width: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .following-head {
+    margin-top: 25px;
+    margin-bottom: 34px;
+    position: relative;
+    font-size: 24px;
+    left: 18px;
+  }
+  .custom-margin {
+    margin-bottom: 66px;
+  }
+  .custom-card {
+    margin-bottom: 25px;
+  }
+  .custom-width {
+    height: 38px;
+    width: 89px;
+  }
+  .custom-img-2 {
+    height: 8rem;
+  }
+  .custom-img22 {
+    height: 11rem;
+    width: auto;
+  }
+  #summary {
+    width: max-content;
+    margin: auto;
+  }
+  .custom-relative {
+    text-align: center;
+  }
+}
+
+.cartstyle {
+  background: #f1f5f9;
+  height: 65px;
+  border-radius: 8px;
+  width: 176vh;
+  padding: 11px;
+  margin-top: 24px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+@media only screen and (max-width: 767px) {
+  .cartstyle {
+    overflow-x: hidden;
+    width: auto;
+  }
+}
