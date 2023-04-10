@@ -21,7 +21,8 @@ const Footers = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
                 {/* <img src="" className="h-8 mr-3" alt="Flowbite Logo" /> */}
-                <span className="self-center  text-white text-2xl font-semibold whitespace-nowrap ">logo</span>
+                <span className="self-center  text-[#b19676] text-2xl font-semibold whitespace-nowrap ">BACEPHALUS NUMISMATIC
+</span>
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white  sm:mb-0">
                 <li>

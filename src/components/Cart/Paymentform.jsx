@@ -111,13 +111,19 @@ export const Paymentform = () => {
           </div>
         </div>
 
-        <button
-          type="submit"
-          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-200"
-        >
-          Submit
-        </button>
       </form>
+      <div className="flex justify-center">
+        <div></div>
+     
+      <div>
+      <button
+          type="submit"
+          className=" mb:25px mx-auto   mt-4 px-4 py-2 bg-[#2e0d23] text-white rounded-md hover:bg-[#2e0d23d6] transition duration-200"
+        >
+         Procceed to payment
+        </button>
+        </div>
+        </div>
     </>
   );
 };

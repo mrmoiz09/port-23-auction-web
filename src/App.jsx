@@ -12,6 +12,13 @@ import { Cartpage } from "./components/Cart/Cartpage";
 import Header from "./components/Header";
 import { Accountpage } from "./components/Accountpage";
 import { Yourcart } from "./components/Cart/Yourcart";
+import Bidpage from "./components/Biddingpages/Bidpage";
+import { Accountbid } from "./components/Account/Accountbid";
+import { Accountwatchlist } from "./components/Account/Accountwatchlist";
+import { Invoicesaccount } from "./components/Account/Invoicesaccount";
+import { Consigment } from "./components/Account/Consigment";
+import{Profileaccount} from "./components/Account/Profileaccount"
+import {Approvalaccount} from "./components/Account/Approvalaccount"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,8 +34,18 @@ function App() {
           <Route path="/Productpage" element={<ProductPage />} />
           <Route path="/faq" element={<Example />} />
           <Route path="/cartpage" element={<Cartpage />} />
-          <Route path="/account" element={<Accountpage />} />
+          <Route path="/account" element={<Accountbid />} />
           <Route path="/mycart" element={<Yourcart />} />
+          <Route path="/Bidpage" element={<Bidpage />} />
+          <Route path="/accountbid" element={<Accountbid />} />
+          <Route path="/accountinvoices" element={<Invoicesaccount />} />
+          <Route path="/consigmentsaccount" element={<Consigment />} />
+          <Route path="/accountwatchlist" element={<Accountwatchlist/>}/>
+          <Route path="/Profileaccount" element={<Profileaccount/>}/>
+          <Route path="/accountapproval" element={<Approvalaccount/>}/>
+    
+    
+    
         </Routes>
 
         <Footers />

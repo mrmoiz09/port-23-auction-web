@@ -111,15 +111,17 @@ const products = [
       <div className="flex-1">
     <div className="p-8">
       {products.map((product) => (
-        <div key={product.id} style={{marginTop:"30px"}}  className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[95%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]">
+        <div key={product.id} style={{marginTop:"30px"}}  className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[85%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]">
           <img src={product.image} alt="Product Image" className="object-contain h-48 w-full md:h-auto md:w-96" />
           <div className="table-column p-4 md:flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem]">
             <div className="md:ml-[33px]">
               <h2 className="font-bold text-xl mb-2">{product.name}</h2>
               <p className="text-gray-700 mb-4">{product.description}</p>
             </div>
+            <hr className="absolute hr22"/>
+            
             <div className="border-t pt-4">
-              <p className="text-gray-700 font-bold">Price: ${product.price.toFixed(2)}</p>
+              <p className="text-gray-700 font-bold"><span className="bg-[#2e0d23] p-[10px] rounded-lg text-white"> Current Bid </span >    <span className="relative top-6 left-5">     ${product.price.toFixed(2)}</span>                                           </p>
             </div>
           </div>
         </div>

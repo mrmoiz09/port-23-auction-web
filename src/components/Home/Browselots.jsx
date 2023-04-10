@@ -466,7 +466,7 @@ export default function Browselots() {
                          <span className="relative left-[4px]" >Archives </span>  
                       </button>
                       </Link>
-                      <Link to ="/Productpage">
+                      <Link to ="/bidpage">
                       <button
                         
                         className="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"

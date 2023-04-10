@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Productslider } from "../Lotes/Productslider";
-import "../CssFolder/custom.css"
+
 const ProductPage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
@@ -69,10 +69,6 @@ const ProductPage = () => {
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
           <div className="flex flex-col justify-start lg:flex-col gap-16  md:mb-[170px]">
-
-
-
-            
             <div className="flex flex-col gap-8 lg:w-2/4 mx-auto m-auto">
               <img
                 src={activeImg}
@@ -134,8 +130,15 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form "  style={{width:"max-content"}}  >
-          <div id="summary" className=" px-8 py-10 " style={{width:"max-content"}}>
+        <div
+          className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form "
+          style={{ width: "max-content" }}
+        >
+          <div
+            id="summary"
+            className=" px-8 py-10 "
+            style={{ width: "max-content" }}
+          >
             <h1 className="font-[initial] text-3xl  pb-8 w-[90%]">Buy now</h1>
             <div className="flex flex-col  items-center">
               <span className="font-[initial] text-[25px]">40 euro</span>

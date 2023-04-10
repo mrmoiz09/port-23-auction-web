@@ -1,7 +1,9 @@
-import React from "react";
+import React ,{useState} from "react";
 import { Card, Dropdown, Tooltip, Button } from "flowbite-react";
 import "../CssFolder/Custom.css";
 import { FaRegBookmark } from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 const images = [
   {
@@ -58,6 +60,7 @@ const images = [
   // Add more objects for additional images
 ];
 export const Followinglots = () => {
+  
   return (
     <>
       <h1 className="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
@@ -108,18 +111,19 @@ export const Followinglots = () => {
                       {image.subtitle}
                     </span>
                     <div className="mt-4 flex space-x-3 lg:mt-6">
-                      <a
-                        href="#"
+                      <Link
+                       to="/archive"
                         className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
                       >
-                         <span className="relative left-[4px]" >Archive</span>  
-                      </a>
-                      <a
-                        href="#"
+                         <span     className="relative left-[4px]" >Archive</span>  
+                         
+                      </Link>
+                      <Link
+                         to="/bidpage"
                         className="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                       >
                      <span className="relative left-[4px]" >Bid now</span>  
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </Card>

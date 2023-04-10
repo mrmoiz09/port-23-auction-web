@@ -4,7 +4,7 @@ import React from "react";
 export const Upcommingauctions = () => {
   return (
     <>
-     
+ 
      <h1 className="text-4xl font-[initial] tracking-tight text-gray-900 md:ml-[127px] sm:ml-[20px] " >
   Upcomming Auctions
   </h1>

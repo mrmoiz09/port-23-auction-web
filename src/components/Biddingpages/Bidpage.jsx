@@ -1,11 +1,10 @@
-import React from "react";
-import { useState } from "react";
-import "../CssFolder/custom.css";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import { Productslider } from "../Lotes/Productslider";
+// import "../CssFolder/custom.css";
 import { Link } from "react-router-dom";
-import "../CssFolder/Cartstyle.css";
 // Link
-
-export const Cartpage = () => {
+const Bidpage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
 
@@ -19,7 +18,7 @@ export const Cartpage = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Jump for Lot:", search);
+    console.log("Jump for Lot:", jumpForLot);
     console.log("Search:", search);
   };
 
@@ -36,8 +35,43 @@ export const Cartpage = () => {
 
   return (
     <>
+      <div className="flex flex-row p-4 justify-end">
+
+        
+        <form
+          onSubmit={handleSubmit}
+          className="flex md:mr-[30px] mb-7 mt-[9px]"
+        >
+          <input
+            className="bg-white rounded-l-md px-4 py-2 border-gray-300 w-1/2 mr-2 border rounded-lg md:h-[35px] drop-shadow-lg"
+            type="text"
+            style={{ borderRadius: "17px" }}
+            placeholder="Jump for Lot"
+            value={jumpForLot}
+            onChange={handleJumpForLotChange}
+          />
+          <input
+            className="bg-white rounded-r-md px-4 py-2 r border-gray-300 w-1/2 mr-2 border rounded-lg md:h-[35px] drop-shadow-lg"
+            type="text"
+            placeholder="Search"
+            value={search}
+            style={{ borderRadius: "17px" }}
+            onChange={handleSearchChange}
+          />
+          <button
+            onClick={handleSubmit}
+            type="submit"
+            className="flex items-center bg-[#2E0D23]  text-white font-bold py-2 px-4 rounded"
+            style={{ borderRadius: "14px" }}
+          >
+            Search
+            <FaSearch className="ml-2 " style={{ fontSize: "15px" }} />
+          </button>
+        </form>
+      </div>
+
       <h1 className=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
-        Cart
+        Live Biding
       </h1>
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
@@ -84,6 +118,7 @@ export const Cartpage = () => {
               <h6 className="text-2xl font-semibold">$ 199.00</h6>
             </div>
           </div>
+          
         </div>
 
         <div className=" child-col child-2  md:h-[54vh] rounded-3xl drop-shadow relative right-5 child-form ">
@@ -130,8 +165,11 @@ export const Cartpage = () => {
           </div>
         </div>
       </div>
-      {/* modal popup below  */}
-      {/* procced to check out */}
+      {/* other lots  card */}
+
+      <Productslider />
     </>
   );
 };
+
+export default Bidpage;
