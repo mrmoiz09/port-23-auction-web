@@ -89,7 +89,7 @@ export const Cartpage = () => {
         <div className=" child-col child-2  md:h-[54vh] rounded-3xl drop-shadow relative right-5 child-form ">
           <div
             id="summary"
-            className="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
+            className="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-113px]  lg:ml-5  bg-slate-100 "
           >
             <h1 className="font-[initial] text-3xl  pb-5 text-center md:mb-5">
               Pricing details

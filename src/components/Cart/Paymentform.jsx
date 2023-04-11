@@ -118,7 +118,7 @@ export const Paymentform = () => {
       <div>
       <button
           type="submit"
-          className=" mb:25px mx-auto   mt-4 px-4 py-2 bg-[#2e0d23] text-white rounded-md hover:bg-[#2e0d23d6] transition duration-200"
+          className="   relative  top-[-22px]   mb:25px mx-auto   mt-4 px-4 py-2 bg-[#2e0d23] text-white rounded-md hover:bg-[#2e0d23d6] transition duration-200"
         >
          Procceed to payment
         </button>

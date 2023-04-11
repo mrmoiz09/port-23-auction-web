@@ -55,58 +55,184 @@ export const Profileaccount = () => {
         </form>
       </div>
 
-      <div className="flex flex-row justify-center gap-[10rem] mb-[107px]">
-        <div className="child-1">
-          <Sidebaraccount />
+      <div className=" .cutom-cd flex flex-row justify-evenly  lg:w-[161vh]  md:w-[161vh]   mb-[107px]">
+        <div className="child-1 border-r lg:h-[100vh] border-black">
+          <Sidebaraccount  />
         </div>
-        <div className="child-2">
-          <h2 className="text-2xl uppercase ml-2">my Profile</h2>
-          <hr className="border-1 w-[100%] " />
+        <div className="child-2 lg:w-[85vh] custom-child-">
+          <h2 className="text-2xl uppercase ml-2">My Profile</h2>
+          <hr
+            className="border-gray-300 border lg:mt-7"
+            style={{ opacity: "0.7" }}
+          />
+          <hr className="border w-[100%] " />
 
-          <div className="form">
-            <div className="flex items-center justify-center p-12">
-              <div className="mx-auto w-full max-w-[550px]">
-              <div class="max-w-2xl mx-auto">
+          <div className="flex flex-row justify-between mt-4">
+            <div>
+              <h4>Identity</h4>
+            </div>
+            <div className="flex flex-row-justify-center gap-3">
+              <button
+                style={{ fontSize: "12px", padding: "6px" }}
+                className="bg-[#2e0d23]  text-white rounded "
+              >
+                verify now
+              </button>
+              <button
+                style={{ fontSize: "12px", padding: "4px" }}
+                className="bg-slate-300  text-black rounded "
+              >
+                change
+              </button>
+            </div>
+          </div>
+          <hr
+            className="border-gray-300 border lg:mt-7"
+            style={{ opacity: "0.7" }}
+          />
 
-<form>
-  <div class="relative z-0 mb-6 w-full group">
-    <input type="email" name="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-    <label for="floating_email" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">email </label>
-  </div>
-  <div class="relative z-0 mb-6 w-full group">
-    <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-    <label for="floating_password" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
-  </div>
-  <div class="relative z-0 mb-6 w-full group">
-    <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-    <label for="floating_repeat_password" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" aria-disabled>2 Fa</label>
-  </div>
-  <div class="grid xl:grid-cols-2 xl:gap-6">
-    <div class="relative z-0 mb-6 w-full group">
-      <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_first_name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Contact</label>
-    </div>
-    <div class="relative z-0 mb-6 w-full group">
-      <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_last_name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
-    </div>
-  </div>
-  <div class="grid xl:grid-cols-2 xl:gap-6">
-    <div class="relative z-0 mb-6 w-full group">
-      <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_phone" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number </label>
-    </div>
-    <div class="relative z-0 mb-6 w-full group">
-      <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_company" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Mobile numer</label>
-    </div>
-  </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">confirm</button>
-</form>
-
-</div>
+          <div className="flex flex-row justify-start  lg:gap-28px md:gap-28px  mt-[20px] .custom-child-gap">
+            <div className="child-1">
+              <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                <svg
+                  class="absolute w-12 h-12 text-gray-400 -left-1"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
               </div>
             </div>
+
+            <div className="child-2">
+              <h5>
+                Full Name{" "}
+                <span className="relative top-3px custom-rel">no company</span>
+              </h5>
+            </div>
+
+            <div className="child-3">
+              <button
+                style={{ fontSize: "12px", padding: "4px" }}
+                className="bg-slate-300  text-black rounded "
+              >
+                not Verified yet
+              </button>
+            </div>
+          </div>
+          <hr
+            className="border-gray-300 border lg:mt-7"
+            style={{ opacity: "0.7" }}
+          />
+
+          <div className="container-12">
+            <form>
+              <div className="form-group">
+                <label className="label" htmlFor="email">
+                  Login
+                </label>
+                <input
+                  className="input ."
+                  type="email"
+                  id="email"
+                  name="email"
+                  required=""
+                />
+              </div>
+
+              <div className="form-group emails">
+                <label className="label" htmlFor="password">
+                  Email
+                </label>
+                <input
+                  placeholder="jhondoe@"
+                    className="input input-L"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required=""
+                />
+              </div>
+              <div className="form-group passwords">
+                <label className="label" htmlFor="contact">
+                  Password
+                </label>
+                <input
+                    className="input input-L"
+                  placeholder="****"
+                  type="text"
+                  id="contact"
+                  name="contact"
+                />
+              </div>
+              <div className="form-group  notenable">
+                <label className="label" htmlFor="address">
+                  2FA
+                </label>
+                <input
+                  placeholder="not enable"
+                    className="input input-L"
+                  type="text"
+                  id="2FA"
+                  disabled
+                />
+              </div>
+              <div className="form-group">
+                <label className="label" htmlFor="email">
+                  Contact
+                </label>
+                <input
+                  className="input input-L"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required=""
+                />
+                <button className=" bg-slate-200 rounded p-1">change</button>
+              </div>
+              <div className="form-group">
+                <label className="label" htmlFor="email">
+                  Address
+                </label>
+                <input
+                  className="input input-L"
+                  type="email"
+                  id="address"
+                  name="address"
+                  required=""
+                  placeholder="houseno,streetno,city,country,postalcode"
+                />
+              </div>
+              <div className="form-group">
+                <label className="label" htmlFor="email">
+                  Phone
+                </label>
+                <input
+                  className="input input-L"
+                  type="text"
+                  id="email"
+                  placeholder="0111 222 333"
+                  name="email"
+                  required=""
+                />
+              </div><div className="form-group">
+                <label className="label" htmlFor="email">
+                  Mobile
+                </label>
+                <input
+                  className="input input-L"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required=""
+                />
+              </div>
+            </form>
           </div>
         </div>
       </div>

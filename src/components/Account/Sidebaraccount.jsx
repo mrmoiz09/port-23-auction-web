@@ -12,32 +12,33 @@ export const Sidebaraccount = () => {
 
   return (
     <>
-      <div className="w-fit w-custom">
+      <div className="w-fit w-custom  ">
         {/* Mobile Toggle Button */}
         <button className="mobile-toggle-btn" onClick={handleToggle}>
           {showNav ? <FaEyeSlash className="relative" /> : <FaFilter className="relative" />}
         </button>
 
         {/* Sidebar */}
-        <Sidebar
-          aria-label="Default sidebar example"
-          className={`sidebar${showNav ? " is-open" : ""}`}
-        >
-          <Sidebar.Items>
+        <Sidebar 
+          aria-label=""
+          className={`  sidebar${showNav ? " is-open" : ""}`}
+        >    
+       
+          <Sidebar.Items >
             <Sidebar.ItemGroup>
-              <Link to="/accountbid">
+              <Link to="/accountbid" className="bg-[#d0b290] rounded">
                 <Sidebar.Item>My Bids</Sidebar.Item>
               </Link>
               <hr className="border-1" />
               <Link to="/accountwatchlist">
-                <Sidebar.Item href="#" label="Pro" labelColor="alternative">
+                <Sidebar.Item   >
                   My Watchlist
                 </Sidebar.Item>
               </Link>
               <hr className="border-1" />
 
               <Link to="/accountinvoices">
-                <Sidebar.Item href="#" label="3">
+                <Sidebar.Item >
                   My Invoices
                 </Sidebar.Item>
               </Link>
@@ -49,13 +50,13 @@ export const Sidebaraccount = () => {
 
               <Link to="/accountapproval">
                 <hr className="border-1" />
-                <Sidebar.Item href="#">My Approval</Sidebar.Item>
+                <Sidebar.Item >My Approval</Sidebar.Item>
               </Link>
 
               <hr className="border-1" />
 
               <Link to="/Profileaccount">
-                <Sidebar.Item href="#">My Profile</Sidebar.Item>
+                <Sidebar.Item >My Profile</Sidebar.Item>
               </Link>
 
               <hr className="border-1" />

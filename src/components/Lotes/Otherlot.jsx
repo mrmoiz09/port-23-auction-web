@@ -57,13 +57,13 @@ const images = [
 
   // Add more objects for additional images
 ];
-export const Productslider  = () => {
+export const Otherlot  = () => {
   return (
     <>
     
     <h1 className="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
       {" "}
-  Popular Items 
+ Other  Items available 
     </h1>
     <div className="mx-auto md:mt-[4rem]  md:mb-[110px] sm:mb-[50px] custom-margin">
       <div className="flex flex-row  overflow-x-auto md:w-[134vh] mx-auto sm:relative Bottom:[30px] custom--margin">

@@ -17,8 +17,10 @@ import { Accountbid } from "./components/Account/Accountbid";
 import { Accountwatchlist } from "./components/Account/Accountwatchlist";
 import { Invoicesaccount } from "./components/Account/Invoicesaccount";
 import { Consigment } from "./components/Account/Consigment";
-import{Profileaccount} from "./components/Account/Profileaccount"
-import {Approvalaccount} from "./components/Account/Approvalaccount"
+import { Profileaccount } from "./components/Account/Profileaccount";
+import { Approvalaccount } from "./components/Account/Approvalaccount";
+import { Loginform } from "./components/Forms/Loginform";
+import { Registerform } from "./components/Forms/Registerform";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,12 +42,11 @@ function App() {
           <Route path="/accountbid" element={<Accountbid />} />
           <Route path="/accountinvoices" element={<Invoicesaccount />} />
           <Route path="/consigmentsaccount" element={<Consigment />} />
-          <Route path="/accountwatchlist" element={<Accountwatchlist/>}/>
-          <Route path="/Profileaccount" element={<Profileaccount/>}/>
-          <Route path="/accountapproval" element={<Approvalaccount/>}/>
-    
-    
-    
+          <Route path="/accountwatchlist" element={<Accountwatchlist />} />
+          <Route path="/Profileaccount" element={<Profileaccount />} />
+          <Route path="/accountapproval" element={<Approvalaccount />} />
+          <Route path="/login" element={<Loginform />} />
+          <Route path="/regestration" element={<Registerform/>}/>
         </Routes>
 
         <Footers />

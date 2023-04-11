@@ -35,11 +35,11 @@ const images = [
 export default function Topslider() {
   return (
     <>
-      <div className="h-[42rem] sm:h-64 xl:h-[42rem] 2xl:h-[42rem] md:drop-shadow-xl rounded-lg">
+      <div className="h-[42rem] sm:h-64 xl:h-[42rem] 2xl:h-[42rem] rounded-lg custom-parent-height">
         <Carousel 
           className="my-carousel"
-          leftControl={<FaChevronLeft />}
-          rightControl={<FaChevronRight />}
+          leftControl={<FaChevronLeft className='custom-icon-position'  />}
+          rightControl={<FaChevronRight className='custom-icon-position' />}
         >
           {images.map((image) => (
             <img key={image.id} src={image.src} alt={image.alt} className='realtive h-[80%] w-[auto]'   style={{ objectFit: 'contain' }} />

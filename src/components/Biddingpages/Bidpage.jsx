@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { Productslider } from "../Lotes/Productslider";
+import { ToastContainer, toast } from "react-toastify";
+import { FaHeart } from "react-icons/fa";
+
+import "react-toastify/dist/ReactToastify.css";
 // import "../CssFolder/custom.css";
 import { Link } from "react-router-dom";
+import { Otherlot } from "../Lotes/Otherlot";
 // Link
 const Bidpage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
@@ -32,12 +36,23 @@ const Bidpage = () => {
   const [activeImg, setActiveImage] = useState(images.img1);
 
   const [amount, setAmount] = useState(1);
+  const [buttonText, setButtonText] = useState("Add to Cart");
+  const thandleClick = () => {
+    setButtonText("Added to Cart");
+    toast.success("Item successfully added to cart!", {
+      // position: "top-left",
+      autoClose: 500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
   return (
     <>
       <div className="flex flex-row p-4 justify-end">
-
-        
         <form
           onSubmit={handleSubmit}
           className="flex md:mr-[30px] mb-7 mt-[9px]"
@@ -71,7 +86,7 @@ const Bidpage = () => {
       </div>
 
       <h1 className=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
-      Pre Biding
+        Pre Biding
       </h1>
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
@@ -99,26 +114,56 @@ const Bidpage = () => {
                 {/* <img src={images.img4} alt="" className='w-[auto] h-24 rounded-md cursor-pointer mr-3' onClick={() => setActiveImage(images.img4)}/> */}
               </div>
             </div>
-            <hr className="border " />
-            {/* ABOUT */}
-            <div className="flex flex-col gap-4 lg:w-2/4 align-middle relative md:left-[50px] custom-relative">
+            <hr className="border" />
+<div className="flex flex-row  items-center gap-4 ml-12  lg:mt-[-58px]	">
+<div className="c-1">
+  <FaHeart/>
+</div>
+<div className="c-2">
+             <p className="text-black ">    Add to wishlist</p>
+             </div>
+      
+             </div>
+            <div className="flex flex-col gap-3 lg:w-2/4 align-middle relative md:left-[50px] custom-relative">
               <div>
-                <span className=" text-violet-600 font-semibold">
-                  COIN NAME
-                </span>
-                <h1 className="text-3xl font-bold">Lot 420 - ‘Rare’ </h1>
-                <h6 className="text-[20px] font-semibold">5 euro</h6>
+                
+                <h1 className="">Description </h1>
+               
               </div>
-              <hr />
+              {/* <hr /> */}
               <p className="text-gray-700">
                 i, sostenitivo, è pensato per dare il massimo lungo il tuo
                 percorso preferito e fare ritorno a casa carico di energia, in
                 attesa della prossima corsa.
               </p>
-              <h6 className="text-2xl font-semibold">$ 199.00</h6>
+            <h1  className="font-[initial] text-3xl font-semibold  pb-5 mt-3">Ask about this Lot</h1>
+            <p style={{opacity:'0.8'}} >contact the auction house to leave text here </p>
+            <div style={{ position: "relative" }}>
+  <textarea
+    className="rounded"
+    name=""
+    id=""
+    cols="90"
+    rows="5"
+    style={{ marginBottom: "30px" }}
+  ></textarea>
+  <button
+    style={{
+      position: "absolute",
+      bottom: "39px",
+      right: "-302px",
+      padding: "5px 10px",
+      backgroundColor: "#2e0d23",
+      color: "white",
+      borderRadius: "5px",
+    }}
+  >
+    Send Message
+  </button>
+</div>
+
             </div>
           </div>
-          
         </div>
 
         <div className=" child-col child-2  md:h-[54vh] rounded-3xl drop-shadow relative right-5 child-form ">
@@ -126,48 +171,68 @@ const Bidpage = () => {
             id="summary"
             className="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
           >
-            <h1 className="font-[initial] text-3xl  pb-5 text-center md:mb-5">
-              Pricing details
+            <h1 className="font-[initial] text-3xl font-semibold  pb-5 realtve lg:top-[-28px] md:mb-5">
+              BUY NOW
             </h1>
-            <div className="flex flex-col gap-3 ">
-              <div className="box  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
-                <span className="font-[initial] text-2xl">Product Price:</span>
-                <span className="font-[initial] text-2xl">700euro</span>
+            <div
+              className="flex flex-col justify-center"
+              style={{ alignItems: "center" }}
+            >
+              <h3 className="text-black text-3xl ">40 Euro</h3>
+
+              <div>
+                <button
+                  className="bg-[#2e0d23] text-white font-semibold p-[6px] rounded h-full relative lg:w-[385px] "
+                  style={{ marginleft: "81px" }}
+                  onClick={thandleClick}
+                >
+                  {buttonText}
+                </button>
+                <ToastContainer />
               </div>
+            </div>
+            <hr className="border-2 mt-5" />
+            <h1 className="font-[initial] text-3xl font-semibold  pb-5">
+              Bidding
+            </h1>
+            <div className="flex flex-col gap-[1.75rem] ">
               {/*  */}
-              <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
+              <div className="box flex  bg-white  flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
                 <span className="font-[initial] text-2xl">Current Bid:</span>
                 <span className="font-[initial] text-2xl relative left-3">
                   700euro
                 </span>
               </div>
-              <div className="box flex flex-row p-[12px] justify-center md:gap-[15rem] gap-a">
-                <span className="font-[initial] text-2xl">VAT:</span>
-                <span className="font-[initial] text-2xl relative left-3">
+              <div className="box  bg-white flex flex-row p-[12px] justify-center md:gap-[10rem] gap-a">
+                <span className="font-[initial] text-2xl">starting price:</span>
+                <span className="font-[initial] text-2xl relative left-2">
                   700euro
                 </span>
               </div>
-              <hr />
-              <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a mt-2">
-                <span className="font-[initial] text-2xl">Total Price:</span>
-                <span className="font-[initial] text-2xl">2100euro</span>
-              </div>
-              
+              <hr className="border-2" />
+              <h1 className="font-[initial] text-3xl font-semibold  pb-5">
+                Place a Bid
+              </h1>
             </div>
-            <Link to="/mycart">
-                <button
-                  className="         bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full  relative top-5 md:left-[70px] flex-row"
-                  style={{ marginleft: "81px" }}
-                >
-                  Proceed to check-out
-                </button>
-              </Link>
+            <Link to="/login">
+              <button
+                className=" bg-[#2e0d23] text-white font-semibold p-[6px] rounded h-full relative lg:w-[385px]"
+                style={{ marginleft: "81px" }}
+              >
+                Login or Singup
+              </button>
+            </Link>
+            <p className="mt-4" style={{ color: "green" }}>
+              how to bid ?
+            </p>
+
+            <hr className="border-2" />
           </div>
         </div>
       </div>
       {/* other lots  card */}
 
-      <Productslider />
+    <Otherlot/>
     </>
   );
 };

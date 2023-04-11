@@ -64,14 +64,14 @@ export const Consigment = () => {
 
 
       <div className="flex flex-row justify-center  lg:gap-[10rem] mb-[107px]">
-        <div className="child-1">
+        <div className="child-1 border-r lg:h-[40vh] border-black">
         <Sidebaraccount/>
         </div>
         <div className="child-2">
           <h2 className="text-2xl uppercase ml-2">MY consigments</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
-          <div className="flex flex-row lg:gap-[10rem] mt-5 justify-center">
+          <div className="custom-llg-3 flex flex-row lg:gap-[12rem] mt-5 justify-center">
             <div>
               <h1>Auction</h1>
             </div>
@@ -95,6 +95,14 @@ export const Consigment = () => {
           </div>
         </div>
       </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />

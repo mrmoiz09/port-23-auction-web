@@ -65,14 +65,14 @@ export const Approvalaccount = () => {
 
 
       <div className="flex flex-row justify-center  gap-[5rem] mb-[107px]">
-        <div className="child-1">
+        <div className="child-1 border-r lg:h-[40vh] border-black">
         <Sidebaraccount/>
         </div>
         <div className="child-2">
           <h2 className="text-2xl uppercase ml-2">My Approval</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
-          <div className="flex flex-row md:gap-[6rem] mt-5 justify-center">
+          <div className="custom-llg-04 flex flex-row lg:gap-[11rem] mt-5 justify-center">
             <div>
               <h1>Auctioneer</h1>
             </div>
@@ -87,7 +87,7 @@ export const Approvalaccount = () => {
           </div>
           <hr className="border-1 mt-2 w-[100%]" />
           <div className="mt-5">
-            <h1 className="text-center	text-xl uppercase font-[initial]">
+            <h1 className=" t-x-l text-center	text-xl uppercase font-[initial]">
            No approvals found
             </h1>
             <hr className="border-1 mt-2 w-[100%]" />
@@ -95,6 +95,12 @@ export const Approvalaccount = () => {
         </div>
       </div>
 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 <br />
 <br />
 <br />

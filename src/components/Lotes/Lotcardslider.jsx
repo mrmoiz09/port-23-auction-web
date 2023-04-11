@@ -1,8 +1,9 @@
 import React from 'react'
-
+// Link
 // import "../CssFolder/Custom.css"
 import { FaRegBookmark } from "react-icons/fa";
 import { Card, Dropdown, Tooltip, Button } from "flowbite-react";
+import { Link } from 'react-router-dom';
 
 const images = [
   {
@@ -72,7 +73,7 @@ export const Lotcardslider = () => {
               <div className="max-w-sm  md:mb-[15px]">
                 <Card>
                   <div className="flex justify-end px-4 pt-4 custom-card custom-pos">
-                    <Tooltip content="Add to archive" placement="top" style="light">
+                    <Tooltip content="add to wishlist" placement="top" style="light">
                       <Button className=" bg-white  hover:bg-white  border-0	border-transparent	" style={{border:"none"}}>
                         <FaRegBookmark color="#2E0D23" />
                       </Button>
@@ -80,15 +81,15 @@ export const Lotcardslider = () => {
                     {/* <Dropdown inline={true} label="">
                       <Dropdown.Item>
                         <a
-                          href="#"
+                          href="//////////////////////////////////////////"
                           className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
-                          archive
+                          Place a bid
                         </a>
                       </Dropdown.Item>
                       <Dropdown.Item>
                         <a
-                          href="#"
+                          href="//////////////////////////////////////////"
                           className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
                         >
                           add to cart
@@ -109,18 +110,18 @@ export const Lotcardslider = () => {
                       {image.subtitle}
                     </span>
                     <div className="mt-4 flex space-x-3 lg:mt-6">
-                      <a
-                        href="#"
+                     <Link to="/bidpage" > <a
+                        href="////////"
                         className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
                       >
-                         <span className="relative left-[4px]" >Archive</span>  
-                      </a>
-                      <a
-                        href="#"
+                         <span className="relative left-[4px] text-[12px]" >Place a bid</span>  
+                      </a></Link>
+                  <Link to='/cartpage'>   <a
+                        href="///"
                         className="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
                       >
-                     <span className="relative left-[4px]" >Bid now</span>  
-                      </a>
+                     <span className="relative left-[4px]" >buy now</span>  
+                      </a> </Link> 
                     </div>
                   </div>
                 </Card>

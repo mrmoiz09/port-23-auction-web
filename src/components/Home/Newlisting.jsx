@@ -1,74 +1,73 @@
-import React from 'react'
-import {  Tooltip ,Button} from "flowbite-react";
+import React, { useState } from "react";
+import { Card, Dropdown, Tooltip, Button } from "flowbite-react";
+import "../CssFolder/Custom.css";
 import { FaRegBookmark } from "react-icons/fa";
-
-import { Card, Dropdown } from "flowbite-react";
+import { Link } from "react-router-dom";
 const images = [
-  {
-    id: 1,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-  {
-    id: 2,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-
-  {
-    id: 3,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-  {
-    id: 4,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-  {
-    id: 5,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-  {
-    id: 6,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-  {
-    id: 7,
-    src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
-    alt: "Bonnie image",
-    title: "rthereum",
-    subtitle: "binance",
-  },
-
-  // Add more objects for additional images
-];
-export const Productslider  = () => {
+    {
+      id: 1,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+    {
+      id: 2,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+  
+    {
+      id: 3,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+    {
+      id: 4,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+    {
+      id: 5,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+    {
+      id: 6,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+    {
+      id: 7,
+      src: "https://katzauction.b-cdn.net/auction_imgs/2023_03_03__170038_79P_KAPR26.jpg",
+      alt: "Bonnie image",
+      title: "rthereum",
+      subtitle: "binance",
+    },
+  
+    // Add more objects for additional images
+  ];
+export const Newlisting = () => {
   return (
-    <>
-    
+    <div className="div--3">
     <h1 className="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
       {" "}
-  Popular Items 
+      New listings on website
     </h1>
     <div className="mx-auto md:mt-[4rem]  md:mb-[110px] sm:mb-[50px] custom-margin">
       <div className="flex flex-row  overflow-x-auto md:w-[134vh] mx-auto sm:relative Bottom:[30px] custom--margin">
-        {images.map((images) => (
-          <div key={images.id} className="lg:col-span-3 ml-[19px]">
+        {images.map((image) => (
+          <div key={image.id} className="lg:col-span-3 ml-[19px]">
             <div className="max-w-sm  md:mb-[15px]">
               <Card>
                 <div className="flex justify-end px-4 pt-4 custom-card custom-pos">
@@ -88,14 +87,14 @@ export const Productslider  = () => {
                 <div className="flex flex-col items-center pb-10 w-[12rem]">
                   <img
                     className="mb-3  rounded-full shadow-lg custom-img"
-                    src={images.src}
-                    alt={images.alt}
+                    src={image.src}
+                    alt={image.alt}
                   />
                   <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                    {images.title}
+                    {image.title}
                   </h5>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    {images.subtitle}
+                    {image.subtitle}
                   </span>
                   {/* <div className="mt-4 flex space-x-3 lg:mt-6">
                   <Link
@@ -118,8 +117,6 @@ export const Productslider  = () => {
         ))}
       </div>
     </div>
- 
-
-</>
+  </div>
   )
 }

@@ -62,14 +62,14 @@ export const Accountwatchlist = () => {
       </div>
 
       <div className="flex flex-row justify-center lg:gap-[10rem] mb-[107px]">
-        <div className="child-1">
+        <div className="child-1  border-r lg:h-[40vh] border-black">
           <Sidebaraccount />
         </div>
         <div className="child-2">
           <h2 className="text-2xl uppercase ml-2">my watchlist</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
-          <div className="flex flex-row lg:gap-[17rem] mt-5 justify-between">
+          <div className="custom-llg-1 flex flex-row lg:gap-[18rem] mt-5 justify-between">
             <div>
               <h1>images</h1>
             </div>
@@ -77,7 +77,7 @@ export const Accountwatchlist = () => {
               <h1>details</h1>
             </div>
             <div>
-   <h1>dellete</h1>
+   <h1>delete</h1>
  </div>
 
           </div>
@@ -94,6 +94,13 @@ export const Accountwatchlist = () => {
     <br />
     <br />
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
     <br />
 
     

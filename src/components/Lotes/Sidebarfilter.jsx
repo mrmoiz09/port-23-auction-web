@@ -3,35 +3,18 @@ import { FaFilter } from 'react-icons/fa';
 import { FaLongArrowAltRight } from "react-icons/fa";
 // Link
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-// Link
-
-import { Browseslider } from "./Browseslider";
 import { Link } from "react-router-dom";
-//  ddmdmdmdm
-
-export default function Browselots() {
+export const Sidebarfilter = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+
   return (
-    <div className="bg-white md:w-[80%]   md:mx-auto sm:w-[auto]">
-      <div>
-        <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-            <h1 className="text-4xl font-[initial] tracking-tight text-gray-900">
-              Browse Lots
-            </h1>
-
-            
-          </div>
-
-          <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            <h2 id="products-heading" className="sr-only">
-              Products
-            </h2>
-
-            <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-              {/* Filters */}
-              <button
-        className="block sm:hidden  bottom-[-67.75rem]  bg-black;"
+  <>
+  <section className="col-span-12 lg:col-span-3 overflow-hidden">
+  {/* position: absolute;
+    top: -285px;
+    left: 28px;               Filters */}
+                      <button
+        className="block sm:hidden  bottom-[-67.75rem]  text-black"
         onClick={() => setIsFilterOpen(!isFilterOpen)}
       >
         <FaFilter size={20} />
@@ -361,9 +344,9 @@ export default function Browselots() {
                       x-model="filters.country"
                       x-on:change="getObjects()"
                     >
-                <option value="" selected="selected">
+                  <option value="" selected="selected">
                         Categories
-                      </option>  
+                      </option> 
                       <option x-text="value.country"></option>
 
                       <option x-text="value.country" value="NU">
@@ -412,13 +395,8 @@ export default function Browselots() {
                 </form>
             
       </div>
-              {/* will pass data by map after componn */}
-              {/* the image slider  */}
-              <Browseslider />
-            </div>
-          </section>
-        </main>
-      </div>
-    </div>
-  );
+      </section>
+  
+  </>
+  )
 }

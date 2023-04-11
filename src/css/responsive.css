@@ -1,3 +1,13 @@
+.custom-rel{
+  position: relative;
+  top: 19px;
+  left: -69px;
+  font-size: 12px;
+  opacity: 0.5;
+
+}
+
+
 @media only screen and (min-width: 1280px) {
   .custom-container {
     /* background-color: red; */
@@ -6,6 +16,20 @@
   }
 }
 
+.--rel{
+  position: relative;
+  display: inherit;
+  top: -34px;
+  width: 12%;
+  padding: 4px;
+  left: 44rem;
+  margin-bottom: -31px;
+  
+}
+.swiper_container{
+
+  
+}
 @media only screen and (max-width: 767px) {
   /* CSS rules for mobile phones */
   .logo {
@@ -55,6 +79,28 @@
     font-size: 24px;
     left: 18px;
   }
+  .custom-llg{
+    gap: 248px;
+  }
+  .custom-llg-1{
+    gap: 6rem
+  }
+  .custom-llg-2{
+    gap: 3rem;
+  }
+  .custom-llg-3{
+
+    gap: 4rem;
+  }
+  .custom-llg-04{
+    position: relative;
+    right: 43px;
+    gap: 31px;
+  }
+  .t-x-l{
+    position: relative;
+    left: -36px;
+  }
   .custom-margin {
     margin-bottom: 66px;
   }
@@ -79,6 +125,18 @@
   .custom-relative {
     text-align: center;
   }
+  .custom-child-{
+    width: 356px;
+  }
+  .label{
+    margin-left: -35px;
+  }
+  .notenable{
+    gap: 27px;
+  }
+  .input-L{
+    padding: 3px;
+  }
 }
 
 .cartstyle {
@@ -91,8 +149,83 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 @media only screen and (max-width: 767px) {
+  .custom-child-1{
+
+    position: relative;
+    right: 84px;
+  }
+  
   .cartstyle {
     overflow-x: hidden;
     width: auto;
   }
+  .hr22{
+    display: none
+    ;
+  }
+
+.custom-parent-height{
+  height: 36rem;
 }
+
+.custom-icons-position{
+
+  background-color: gray;
+  /* padding: 1rem; */
+  position: relative;
+  top: 200px;
+}
+
+
+
+
+
+
+}
+/* form below */
+
+.container-12 {
+margin-top: 9px;
+  border-radius: 10px;
+
+  /* margin: 50px auto; */
+  max-width: 500px;
+  padding: 30px;
+}
+.custom-child-gap{
+
+gap: inherit;
+
+}
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+  /* background-color: #f9f9f9; */
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #444;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgb(78 70 70 / 29%);
+}
+.input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+  border: 2px solid #007aff;
+  outline: none;
+}
+
+.input{
+  width: 25rem;
+}
+

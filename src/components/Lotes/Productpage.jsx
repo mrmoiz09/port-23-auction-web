@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { Productslider } from "../Lotes/Productslider";
-
+// import "../CssFolder/custom.css";
+import { Link } from "react-router-dom";
+// Link
 const ProductPage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
@@ -34,6 +36,8 @@ const ProductPage = () => {
   return (
     <>
       <div className="flex flex-row p-4 justify-end">
+
+        
         <form
           onSubmit={handleSubmit}
           className="flex md:mr-[30px] mb-7 mt-[9px]"
@@ -66,14 +70,17 @@ const ProductPage = () => {
         </form>
       </div>
 
+      <h1 className=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
+      ProductPage
+      </h1>
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
           <div className="flex flex-col justify-start lg:flex-col gap-16  md:mb-[170px]">
-            <div className="flex flex-col gap-8 lg:w-2/4 mx-auto m-auto">
+            <div className="flex flex-col gap-8 lg:w-2/4 mx-auto m-auto ">
               <img
                 src={activeImg}
                 alt=""
-                className="w-full md:h-[300px] aspect-square object-cover rounded-xl  custom-img-3"
+                className="w-full custom-img22  md:h-[228px] aspect-square object-cover rounded-xl"
               />
               <div className="flex flex-row justify-bcenter h-24">
                 <img
@@ -92,89 +99,72 @@ const ProductPage = () => {
                 {/* <img src={images.img4} alt="" className='w-[auto] h-24 rounded-md cursor-pointer mr-3' onClick={() => setActiveImage(images.img4)}/> */}
               </div>
             </div>
+            <hr className="border " />
             {/* ABOUT */}
-            <div className="flex flex-col gap-4 lg:w-2/4 align-middle relative left-[50px]">
+            <div className="flex flex-col gap-4 lg:w-2/4 align-middle relative md:left-[50px] custom-relative">
               <div>
                 <span className=" text-violet-600 font-semibold">
                   COIN NAME
                 </span>
-                <h1 className="text-3xl font-bold">auction bid </h1>
+                <h1 className="text-3xl font-bold">Lot 420 - ‘Rare’ </h1>
+                <h6 className="text-[20px] font-semibold">5 euro</h6>
               </div>
+              <hr />
               <p className="text-gray-700">
-                Con un'er sostenerti in tutti i a, in attesa
+                i, sostenitivo, è pensato per dare il massimo lungo il tuo
+                percorso preferito e fare ritorno a casa carico di energia, in
+                attesa della prossima corsa.
               </p>
               <h6 className="text-2xl font-semibold">$ 199.00</h6>
-              <div className="flex flex-row items-center gap-12">
-                <div className="flex flex-col items-center">
-                  <h1 className=" md:mr-64 text-3xl font-bold">
-                    {" "}
-                    Ask about the bid
-                  </h1>
-                  <div className="relative">
-                    <textarea
-                      className=" mt-[36px] drop-shadow-md  border border-gray-300 p-4 rounded-lg md:w-[80vh] h-48"
-                      placeholder="Enter your message"
-                    ></textarea>
-                    <button className="absolute bottom-2 right-2 bg-[#2e0d23] text-white font-bold py-2 px-4 rounded-lg">
-                      send message
-                    </button>
-                  </div>
-
-                  {/* <button className='bg-gray-200 py-2 px-5 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev - 1)}>-</button> */}
-                  {/* <span className='py-4 px-6 rounded-lg'>{amount}</span> */}
-                  {/* <button className='bg-gray-200 py-2 px-4 rounded-lg text-violet-800 text-3xl' onClick={() => setAmount((prev) => prev + 1)}>+</button> */}
-                </div>
-                {/* <button className='bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full'>Add to Cart</button> */}
-              </div>
             </div>
           </div>
+          
         </div>
 
-        <div
-          className=" child-col child-2 md:w-[100%] lg:w-[71%] bg-slate-100 md:h-[71vh] rounded-3xl drop-shadow relative right-5 child-form "
-          style={{ width: "max-content" }}
-        >
+        <div className=" child-col child-2  md:h-[54vh] rounded-3xl drop-shadow relative right-5 child-form ">
           <div
             id="summary"
-            className=" px-8 py-10 "
-            style={{ width: "max-content" }}
+            className="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
           >
-            <h1 className="font-[initial] text-3xl  pb-8 w-[90%]">Buy now</h1>
-            <div className="flex flex-col  items-center">
-              <span className="font-[initial] text-[25px]">40 euro</span>
-              <button className="bg-[#2e0d23] text-white font-semibold p-[9px] w-[90&] rounded-xl h-full">
-                Add to cart
-              </button>
-            </div>
-            <hr className="border border-gray-950 mt-8" />
-            <div className="flex flex-col  mt-10 mb-5">
-              <h2 className="font-[initial] text-sm uppercase">Items 3</h2>
-              <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
-                <span className="font-[initial] text-2xl">Current Bid</span>
+            <h1 className="font-[initial] text-3xl  pb-5 text-center md:mb-5">
+              Pricing details
+            </h1>
+            <div className="flex flex-col gap-3 ">
+              <div className="box  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
+                <span className="font-[initial] text-2xl">Product Price:</span>
                 <span className="font-[initial] text-2xl">700euro</span>
               </div>
-
-              <div className="box bg-white  flex flex-row p-[12px] justify-center md:gap-[11rem] mt-[4rem] gap-a">
-                <span className="font-[initial] text-2xl">Starting price</span>
-                <span className="font-[initial] text-2xl">20 usd</span>
+              {/*  */}
+              <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
+                <span className="font-[initial] text-2xl">Current Bid:</span>
+                <span className="font-[initial] text-2xl relative left-3">
+                  700euro
+                </span>
               </div>
+              <div className="box flex flex-row p-[12px] justify-center md:gap-[15rem] gap-a">
+                <span className="font-[initial] text-2xl">VAT:</span>
+                <span className="font-[initial] text-2xl relative left-3">
+                  700euro
+                </span>
+              </div>
+              <hr />
+              <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a mt-2">
+                <span className="font-[initial] text-2xl">Total Price:</span>
+                <span className="font-[initial] text-2xl">2100euro</span>
+              </div>
+              
             </div>
-            <hr className="border border-gray-950 mt-8" />
-            <div className="flex flex-col  items-center">
-              <h1 className='className="font-[sans-serif] md:mt-[26px] md:ml-[-16rem]text-3xl  pb-8 uppercase'>
-                place a bid
-              </h1>
-
-              <button className="bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full">
-                Login or Singup
-              </button>
-            </div>
-            {/* <hr className="border border-gray-950 mt-8" /> */}
-            {/* <p className="middle text-[green] mt-8"> how to bid</p> */}
+            <Link to="/mycart">
+                <button
+                  className="         bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full  relative top-5 md:left-[70px] flex-row"
+                  style={{ marginleft: "81px" }}
+                >
+                  Proceed to check-out
+                </button>
+              </Link>
           </div>
         </div>
       </div>
-
       {/* other lots  card */}
 
       <Productslider />

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { FaSearch } from "react-icons/fa";
 import {Lotcardslider} from "../components/Lotes/Lotcardslider"
-import Lotffilter from './Lotes/Lotffilter'
+// import Lotffilter from './Lotes/Lotffilter'
+import {Lotffilter} from "../components/Lotes/Lotffilter"
 export const Lotpage = () => {
   
   const [jumpForLot, setJumpForLot] = useState("");

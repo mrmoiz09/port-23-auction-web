@@ -55,16 +55,15 @@ export const Accountbid = () => {
           </button>
         </form>
       </div>
-
       <div className="flex flex-row justify-center lg:gap-[10rem] mb-[107px]">
-        <div className="child-1">
+        <div className="child-1 child-border border-r lg:h-[40vh] border-black ">
           <Sidebaraccount />
         </div>
         <div className="child-2">
           <h2 className="text-2xl uppercase ml-2">my bids</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
-          <div className="flex flex-row lg:gap-[39.5rem] mt-5 justify-center">
+          <div className="custom-llg flex flex-row lg:gap-[39.5rem] mt-5 justify-center">
             <div>
               <h1>Auction</h1>
             </div>
@@ -85,7 +84,8 @@ export const Accountbid = () => {
       <br />
       <br />
       <br />
-
+      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
+      <br /> <br /> <br /> <br />
     </>
   );
 };

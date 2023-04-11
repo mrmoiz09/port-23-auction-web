@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+
 import "../css/headernav.css";
-import { FaGripLines, FaTimes } from "react-icons/fa";
+import {
+  FaGripLines,
+  FaTimes,
+  FaShoppingCart,
+  FaRegHeart,
+} from "react-icons/fa";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
@@ -25,7 +31,11 @@ const Header = () => {
     <>
       <div className="container custom-container">
         <div className="logo-section">
-          <h1 className="logo">bacephalus numismatic</h1>
+          <Link to="/">
+            {" "}
+            <h1 className="logo">Bucephalus numismatic</h1>
+          </Link>
+
           <div className="">
             {showNav ? (
               <FaTimes
@@ -40,10 +50,8 @@ const Header = () => {
             )}
           </div>
         </div>
-        <div
-          className={showNav ? "nav-bar show" : "nav-bar"}
-          id="nav-bar"
-        >
+        <div className={showNav ? "nav-bar show" : "nav-bar"} id="nav-bar">
+        
           <ul>
             <Link to="/">
               <li className="li li-links" onClick={handleToggle}>
@@ -68,12 +76,12 @@ const Header = () => {
                 Faq
               </li>
             </Link>
-            <hr className="hr border" />
+            {/* <hr className="hr border" />
             <Link to="/Cartpage">
               <li className="li li-links" onClick={handleToggle}>
                 Cart
               </li>
-            </Link>
+            </Link> */}
             <hr className="hr border" />
             <Link to="/account">
               <li className="li li-links" onClick={handleToggle}>
@@ -81,6 +89,15 @@ const Header = () => {
               </li>
             </Link>
           </ul>
+
+          <div className="--rel relative  bg-[#0e0e63]  rounded  w-[50%]">
+
+            <div className="flex flex-row justify-center gap-[17px]  " style={{alignItems:'center'}}>
+             <Link to="/login"> <p className="text-white cursor-pointer">Login</p></Link>
+             <Link to="/archive"> <FaRegHeart className="text-white cursor-pointer"/></Link>
+             <Link to="/mycart"><FaShoppingCart className="text-white cursor-pointer"/></Link> 
+            </div>
+          </div>
         </div>
       </div>
     </>

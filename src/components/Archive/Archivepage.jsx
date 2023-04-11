@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 export const Archivepage = () => {
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
-
+// Link
   const handleJumpForLotChange = (event) => {
     setJumpForLot(event.target.value);
   };
@@ -28,7 +28,7 @@ export const Archivepage = () => {
         "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
       image:
         "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      price: 19.99,
+      names: "Zurich (CH)",
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ export const Archivepage = () => {
         "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
       image:
         "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      price: 19.99,
+      names: "Zurich (CH)",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export const Archivepage = () => {
         "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
       image:
         "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      price: 19.99,
+      names: "Zurich (CH)",
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ export const Archivepage = () => {
         "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
       image:
         "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      price: 19.99,
+      names: "Zurich (CH)",
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ export const Archivepage = () => {
         "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
       image:
         "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      price: 19.99,
+      names: "Zurich (CH)",
     },
   ];
   // ended /
@@ -119,11 +119,12 @@ export const Archivepage = () => {
 
       <div className="flex-1">
         <div className="p-8">
+          <Link to='/Productpage' >
           {products.map((product) => (
             <div
               key={product.id}
               style={{ marginTop: "30px" }}
-              className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[85%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]"
+              className=" cursor-pointer bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row md:w-[85%] md:mx-auto md:m-auto drop-shadow-lg mt-[10px]"
             >
               <img
                 src={product.image}
@@ -135,23 +136,26 @@ export const Archivepage = () => {
                   <h2 className="font-bold text-xl mb-2">{product.name}</h2>
                   <p className="text-gray-700 mb-4">{product.description}</p>
                 </div>
-                <hr className="absolute sm:border-1 sm:block hr22" />
-
-                <div className="border-t pt-4">
-                  <p className="text-gray-700 font-bold">
-              <Link to="/Bidpage">     <span className="bg-[#2e0d23] cursor-pointer	 p-[10px] rounded-lg text-white">
-                      {" "}
-                      bid now{" "}
-                    </span>{" "}</Link> 
-                    <span className="relative md:top-6 left-[84px] lg:top-6 lg:left-5 archive-text">
-                      {" "}
-                      ${product.price.toFixed(2)}
-                    </span>{" "}
-                  </p>
+                {/* <hr className="absolute sm:border-1 sm:block hr22" /> */}
+                <div className="flex flex-row lg:ml-[75px]">
+                  <div className="pt-4 ">
+                    <p className="text-gray-700 font-bold">
+                      <span className="text-[#2e0d23] cursor-pointer	">
+                        {" "}
+                        20 - 21 April 2023
+                      </span>{" "}
+                      <span className="relative  left-[57px] lg:top-[0rem] md:top-[0rem] lg:left-5 archive-text">
+                        {" "}
+                        ${product.name}
+                      </span>{" "}
+                    </p>
+                  </div>
                 </div>
               </div>
+              
             </div>
           ))}
+          </Link>
         </div>
       </div>
     </>
