@@ -71,7 +71,7 @@ const Bidpage = () => {
       </div>
 
       <h1 className=" cartstyle sm:relative  sm:text-3xl top:9px  text-4xl font-[initial] mt-[30px] tracking-tight text-gray-900 md:ml-[12px] sm:ml-[20px] mb-[3rem]  md:text-[3rem]   lg:text-[3rem]  lg:mt-4rem  md:mt-4rem ">
-        Live Biding
+      Pre Biding
       </h1>
       <div className="parent flex md:flex-row parent-col">
         <div className="child-1">
