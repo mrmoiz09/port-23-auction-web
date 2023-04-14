@@ -30,7 +30,7 @@ export const LotsProduct = () => {
                     loading="lazy"
                     className="h-full object-contain"
                     src="https://primary.jwwb.nl/public/u/x/q/temp-fpjrchemtgknipuwutwj/4s4a1f/95.jpg?enable-io=true&enable=upscale&fit=bounds&width=960&height=480"
-                    alt="1 - Czechoslovakia 1 Dukat 1923 NGC MS 63"
+                    alt="1 - Czechoslovakia 1 Dukas 1923 NGC MS 63"
                   />
                 </div>
               </div>
@@ -56,7 +56,7 @@ export const LotsProduct = () => {
                     className="text-base font-bold text-gray-700 dark:text-white group-hover:text-yellow-500 transition ease-in-out duration-300"
                     href="/lot/272691"
                   >
-                    Czechoslovakia 1 Dukat 1923 NGC MS 63
+                    Czechoslovakia 1 Dukas 1923 NGC MS 63
                   </a>
                   <template x-if="object.video" />
                 </div>
@@ -71,17 +71,30 @@ export const LotsProduct = () => {
             </div>
             {/* Lot Owner/Customer  */}
             {/* Pre-Bidding Information */}
-            <template x-if="object.status === 'prebidding'" />
+            <template />
             {/* Sold Information */}
             <template x-if="(object.status === 'sold' || object.status === 'unsold')" />
             <div className="w-full mx-auto border-t-2">
               <div className="flex flex-row justify-center gap-4 mt-4">
-           <Link to='/Bidpage'>     <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
-                  Current Bid{" "}
-                </button></Link>
-            <Link to='/Productpage'>   <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
-                  Buy Now
-                </button></Link> 
+                <Link to="/Bidpage">
+                  {" "}
+                  <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
+                    Current Bid{" "}
+                  </button>
+                </Link>
+                <Link to="/Productpage">
+                  {" "}
+                  <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
+                    Buy Now
+                  </button>
+                </Link>
+              </div>
+              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items">
+                <span class="font-bold font-shadow-y">Current bid 20$</span>
+                <span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm">
+                  {" "}
+                  Price 20$
+                </span>
               </div>
             </div>
           </div>
@@ -157,17 +170,24 @@ export const LotsProduct = () => {
             <template x-if="(object.status === 'sold' || object.status === 'unsold')" />
             <div className="w-full mx-auto border-t-2">
               <div className="flex flex-row justify-center gap-4 mt-4">
-           <Link to='/Bidpage'>     <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
-                  Current Bid{" "}
-                </button></Link>
-            <Link to='/Productpage'>   <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
-                  Buy Now
-                </button></Link> 
+                <Link to="/Bidpage">
+                  {" "}
+                  <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
+                    Current Bid{" "}
+                  </button>
+                </Link>
+                <Link to="/Productpage">
+                  {" "}
+                  <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
+              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+
             </div>
           </div>
         </div>
-
 
         <div
           className="group bg-white dark:bg-night-900 shadow rounded space-y-6 md:flex flex-col"
@@ -239,17 +259,24 @@ export const LotsProduct = () => {
             <template x-if="(object.status === 'sold' || object.status === 'unsold')" />
             <div className="w-full mx-auto border-t-2">
               <div className="flex flex-row justify-center gap-4 mt-4">
-           <Link to='/Bidpage'>     <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
-                  Current Bid{" "}
-                </button></Link>
-            <Link to='/Productpage'>   <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
-                  Buy Now
-                </button></Link> 
+                <Link to="/Bidpage">
+                  {" "}
+                  <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
+                    Current Bid{" "}
+                  </button>
+                </Link>
+                <Link to="/Productpage">
+                  {" "}
+                  <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
+              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+
             </div>
           </div>
         </div>
-
 
         <div
           className="group bg-white dark:bg-night-900 shadow rounded space-y-6 md:flex flex-col"
@@ -321,17 +348,24 @@ export const LotsProduct = () => {
             <template x-if="(object.status === 'sold' || object.status === 'unsold')" />
             <div className="w-full mx-auto border-t-2">
               <div className="flex flex-row justify-center gap-4 mt-4">
-           <Link to='/Bidpage'>     <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
-                  Current Bid{" "}
-                </button></Link>
-            <Link to='/Productpage'>   <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
-                  Buy Now
-                </button></Link> 
+                <Link to="/Bidpage">
+                  {" "}
+                  <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
+                    Current Bid{" "}
+                  </button>
+                </Link>
+                <Link to="/Productpage">
+                  {" "}
+                  <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
+              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+
             </div>
           </div>
         </div>
-
 
         <div
           className="group bg-white dark:bg-night-900 shadow rounded space-y-6 md:flex flex-col"
@@ -403,21 +437,25 @@ export const LotsProduct = () => {
             <template x-if="(object.status === 'sold' || object.status === 'unsold')" />
             <div className="w-full mx-auto border-t-2">
               <div className="flex flex-row justify-center gap-4 mt-4">
-           <Link to='/Bidpage'>     <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
-                  Current Bid{" "}
-                </button></Link>
-            <Link to='/Productpage'>   <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
-                  Buy Now
-                </button></Link> 
+                <Link to="/Bidpage">
+                  {" "}
+                  <button className="border-slate-500 p-2  rounded-full shadow-x  text-black bg-white">
+                    Current Bid{" "}
+                  </button>
+                </Link>
+
+                <Link to="/Productpage">
+                  {" "}
+                  <button className="border-slate-500 p-2 rounded-full shadow-x text-black bg-white">
+                    Buy Now
+                  </button>
+                </Link>
               </div>
+              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+
             </div>
           </div>
         </div>
-
-
-
-
-
       </section>
     </>
   );

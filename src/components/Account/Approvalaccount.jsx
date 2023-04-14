@@ -69,7 +69,7 @@ export const Approvalaccount = () => {
         <Sidebaraccount/>
         </div>
         <div className="child-2">
-          <h2 className="text-2xl uppercase ml-2">My Approval</h2>
+          <h2 className="text-2xl uppercase ml-2 font-all">My Approval</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
           <div className="custom-llg-04 flex flex-row lg:gap-[11rem] mt-5 justify-center">

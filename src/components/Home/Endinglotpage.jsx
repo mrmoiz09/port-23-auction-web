@@ -2,8 +2,55 @@ import React, { useState } from "react";
 
 import { FaSearch, FaRegHeart, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
-export const Archivepage = () => {
-  const [jumpForLot, setJumpForLot] = useState("");
+const products = [
+    {
+      id: 1,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      names: "Zurich (CH)",
+    },
+    {
+      id: 2,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      names: "Zurich (CH)",
+    },
+    {
+      id: 3,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      names: "Zurich (CH)",
+    },
+    {
+      id: 4,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      names: "Zurich (CH)",
+    },
+    {
+      id: 5,
+      name: "Product Name",
+      description:
+        "Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities.",
+      image:
+        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
+      names: "Zurich (CH)",
+    },
+  ];
+export const Endinglotpage = () => {
+    const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
 // Link
   const handleJumpForLotChange = (event) => {
@@ -19,59 +66,11 @@ export const Archivepage = () => {
     console.log("Jump for Lot:", jumpForLot);
     console.log("Search:", search);
   };
-  // products slider data
-  const products = [
-    {
-      id: 1,
-      name: "Black Auction 17 – Bucephalus Numismatic",
-      description:
-        "Auction 18 – Bucephalus Numismatic,Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities",
-      image:
-        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      names: "Zurich (CH)",
-    },
-    {
-      id: 2,
-      name: "Black Auction 17 – Bucephalus Numismatic",
-      description:
-      "Auction 18 – Bucephalus Numismatic,Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities",
-      image:
-        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      names: "Zurich (CH)",
-    },
-    {
-      id: 3,
-      name: "Black Auction 17 – Bucephalus Numismatic",
-      description:
-      "Auction 18 – Bucephalus Numismatic,Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities",
-      image:
-        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      names: "Zurich (CH)",
-    },
-    {
-      id: 4,
-      name: "Black Auction 17 – Bucephalus Numismatic",
-      description:
-      "Auction 18 – Bucephalus Numismatic,Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities",
-      image:
-        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      names: "Zurich (CH)",
-    },
-    {
-      id: 5,
-      name: "Black Auction 17 – Bucephalus Numismatic",
-      description:
-      "Auction 18 – Bucephalus Numismatic,Greek, Roman, Byzantine and Medieval Coins, Seals, Antiquities",
-      image:
-        "https://katzauction.b-cdn.net/auction_imgs/2023_03_21__141314_80p_bbf26.jpg",
-      names: "Zurich (CH)",
-    },
-  ];
-  // ended /
 
   return (
-    <>
-      <div className="flex flex-row p-4 justify-end">
+   <>
+   
+   <div className="flex flex-row p-4 justify-end">
         <form
           onSubmit={handleSubmit}
           className="flex md:mr-[30px] mb-7 mt-[9px]"
@@ -104,28 +103,28 @@ export const Archivepage = () => {
         </form>
       </div>
       {/*  */}
-
+      
       <div className="bg-slate-200 md:p-[37px] sm:p-[2px]">
         {/* font-size: 21px; position: absolute; font-family: initial; margin-left:
         43px; */}
         <h1
-          className="  	 font-all  md:absolute lg:absolute sm:relative  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
+          className=" lg:mt-[-11px] 	 font-[initial] md:absolute lg:absolute sm:relative  ml-[34px] sm:text-[auto] md:text-[27px] mt-[-4px] border-4 border-b-border-black"
           style={{ borderBottom: "2px solid" }}
         >
-          Archives{" "}
+      Lots Ending Soon
         </h1>
       </div>
       {/*  */}
-
-      <div className="flex-1     m-[22px;]" >
+      
+      <div className="flex-1">
         <div className="p-8">
           <Link to='/Productpage' >
           {products.map((product) => (
             <div
               key={product.id}
-            
-              className="   cursor-pointer bg-white  overflow-hidden flex flex-col md:flex-row  md:mx-auto md:m-auto  border-y 
-              "
+              style={{ marginTop: "30px" }}
+              className=" cursor-pointer bg-white rounded-lg overflow-hidden flex flex-col md:flex-row md:w-[85%] md:mx-auto md:m-auto  mt-[10px] border-y 
+              border-black"
             >
               <img
                 src={product.image}
@@ -134,25 +133,22 @@ export const Archivepage = () => {
               />
               <div className="table-column p-4 md:flex md:flex-row justify-center md:p-[57px] md:gap-[17.25rem]">
                 <div className="md:ml-[33px]">
-                  <h5 className="font-bold text-xl mb-2  font-['DM Serif Text', serif;] lg:whitespace-nowrap	">{product.name}</h5>
-                  <p className="text-gray-700 mb-4  font-['DM Serif Text', serif;] lg:whitespace-nowrap	">{product.description}</p>
+                  <h2 className="font-bold text-xl mb-2">{product.name}</h2>
+                  <p className="text-gray-700 mb-4">{product.description}</p>
                 </div>
                 {/* <hr className="absolute sm:border-1 sm:block hr22" /> */}
-                <div className="flex flex-row lg:ml-[-187px]">
-                {/* position: relative;
-    left: -103px;
-    top: 23px; */}
-                  
+                <div className="flex flex-row lg:ml-[75px]">
+
                   <div className="pt-4 ">
-                    <hr className="border border-black hr-border-transform lg:relative  lg:left-[-103px]    lg:top-[24px]  md:top-[24px]    md:relative   md:left-[-103px]  hide---hr  " />
-                    <p className="text-gray-700 font-bold  font-['DM Serif Text', serif;]">
-                      <span className="text-[#2e0d23] cursor-pointer	 font-['DM Serif Text', serif;] ">
+                <hr className="border border-black hr-border-transform lg:relative  lg:left-[-103px]    lg:top-[24px]  md:top-[24px]    md:relative   md:left-[-103px] hide---hr" />
+                    <p className="text-gray-700 font-bold">
+                      <span className="text-[#2e0d23] cursor-pointer	">
                         {" "}
                         20 - 21 April 2023
                       </span>{" "}
-                      <span className="relative   lg:top-[0rem] md:top-[0rem]  lg:left:[14px]  archive-text    ">
+                      <span className="relative  left-[57px] lg:top-[0rem] md:top-[0rem] lg:left-5 archive-text">
                         {" "}
-                        Zurich (CH)
+                        ${product.name}
                       </span>{" "}
                     </p>
                   </div>
@@ -164,6 +160,6 @@ export const Archivepage = () => {
           </Link>
         </div>
       </div>
-    </>
-  );
-};
+   </>
+  )
+}

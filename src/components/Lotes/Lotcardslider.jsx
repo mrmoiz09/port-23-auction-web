@@ -62,7 +62,7 @@ const images = [
 export const Lotcardslider = () => {
   return (
    <>
-   <h1 className="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-[initial] tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
+   <h1 className="following-head md:mt-[30px] sm:mt-[15px]  text-4xl font-all tracking-tight md:text-gray-900 md:ml-[127px] sm:ml-[20px] ">
         {" "}
        Popular
       </h1>
@@ -109,20 +109,38 @@ export const Lotcardslider = () => {
                     <span className="text-sm text-gray-500 dark:text-gray-400">
                       {image.subtitle}
                     </span>
-                    <div className="mt-4 flex space-x-3 lg:mt-6">
-                     <Link to="/bidpage" > <a
-                        href="////////"
-                        className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
-                      >
-                         <span className="relative left-[4px] text-[12px]" >Place a bid</span>  
-                      </a></Link>
-                  <Link to='/cartpage'>   <a
-                        href="///"
-                        className="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                      >
-                     <span className="relative left-[4px]" >buy now</span>  
-                      </a> </Link> 
-                    </div>
+                    <div className=" flex space-x-3 flex-gap-d ">
+                        <Link
+                          to="/bidpage"
+                          className="custom-width inline-flex items-center rounded-lg bg-[#b19676] py-2 px-4 text-center hover:bg-[#ceae89] text-sm font-medium text-white  focus:outline-none "
+                        >
+                          <span className="relative left-[4px] lg:text-xs font-response-sm ">
+                            Place a bid
+                          </span>
+                        </Link>
+                        <Link
+                          to="/bidpage"
+                          className="custom-width inline-flex items-center rounded-lg border border-gray-300 bg-white py-2 px-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-gray-800 dark:text-white dark:hover:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                        >
+                          <span className="relative left-[4px]">Buy now</span>
+                        </Link>
+                      </div>
+                      <div className="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position">
+                       
+                        <span
+                          
+                          className="font-bold font-shadow-y"
+                        >
+                          Current bid 20$
+                        </span>
+                        <span
+                          
+                          className="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"
+                        >
+                          {" "}
+                          Price 20$
+                        </span>
+                      </div>
                   </div>
                 </Card>
               </div>

@@ -42,7 +42,7 @@ export default function Topslider() {
           rightControl={<FaChevronRight className='custom-icon-position' />}
         >
           {images.map((image) => (
-            <img key={image.id} src={image.src} alt={image.alt} className='realtive h-[80%] w-[auto]'   style={{ objectFit: 'contain' }} />
+            <img key={image.id} src={image.src} alt={image.alt} className='img-slider-responsive  realtive h-[80%] w-[auto]'   style={{ objectFit: 'contain' }} />
           ))}
         </Carousel>
       </div>

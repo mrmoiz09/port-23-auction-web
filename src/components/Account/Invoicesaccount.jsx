@@ -67,7 +67,7 @@ export const Invoicesaccount = () => {
         <Sidebaraccount/>
         </div>
         <div className="child-2">
-          <h2 className="text-2xl uppercase ml-2">My invoices</h2>
+          <h2 className="text-2xl uppercase ml-2 font-all">My invoices</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
           <div className=" custom-llg-2 flex flex-row lg:gap-[12rem] mt-5 justify-center">

@@ -66,7 +66,7 @@ export const Accountwatchlist = () => {
           <Sidebaraccount />
         </div>
         <div className="child-2">
-          <h2 className="text-2xl uppercase ml-2">my watchlist</h2>
+          <h2 className="text-2xl uppercase ml-2 font-all">my Watchlist</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
           <div className="custom-llg-1 flex flex-row lg:gap-[18rem] mt-5 justify-between">

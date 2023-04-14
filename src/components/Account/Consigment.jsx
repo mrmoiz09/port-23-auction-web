@@ -68,7 +68,7 @@ export const Consigment = () => {
         <Sidebaraccount/>
         </div>
         <div className="child-2">
-          <h2 className="text-2xl uppercase ml-2">MY consigments</h2>
+          <h2 className="text-2xl uppercase ml-2 font-all">MY consignments</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
           <div className="custom-llg-3 flex flex-row lg:gap-[12rem] mt-5 justify-center">
@@ -89,7 +89,7 @@ export const Consigment = () => {
           <hr className="border-1 mt-2 w-[100%]" />
           <div className="mt-5">
             <h1 className="text-center	text-xl uppercase font-[initial]">
-           No consigments found
+           No consignments found
             </h1>
             <hr className="border-1 mt-2 w-[100%]" />
           </div>

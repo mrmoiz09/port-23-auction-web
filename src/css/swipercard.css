@@ -47,7 +47,7 @@
 }
 
 .swiper_container {
-  height: 39rem;
+  height: 37rem;
   padding: 11rem 0;
   position: relative;
 }
@@ -166,7 +166,11 @@
     max-width: -webkit-fill-available;
    }
    .swiper_container{
-    height: 50rem;
+   
+      height: 51rem;
+      position: relative;
+      top: -44px;
+  
    }
    .img {
     height: 27%;

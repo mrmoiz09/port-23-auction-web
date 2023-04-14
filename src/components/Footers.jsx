@@ -19,9 +19,9 @@ const Footers = () => {
 <footer className="bg-[#2E0D23] shadow dark:bg-gray-900  ">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
+            <a href="/////" className="flex items-center mb-4 sm:mb-0">
                 {/* <img src="" className="h-8 mr-3" alt="Flowbite Logo" /> */}
-                <span className="self-center  text-[#b19676] text-2xl font-semibold whitespace-nowrap ">Bucephalus NUMISMATIC
+                <span className="self-center  text-[#b19676] text-2xl font-semibold whitespace-nowrap ">BUCEPHALUS NUMISMATIC
 </span>
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white  sm:mb-0">
@@ -47,14 +47,14 @@ const Footers = () => {
           Email address
         </label>
         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-          <HiOutlineMail className="w-4 h-4 text-gray-500 dark:text-gray-400" />
+          <HiOutlineMail className="hide-me w-4 h-4 text-gray-500 dark:text-gray-400 ml-[7px]"  /> 
         </div>
         <input
           id="email"
-          className="form-input bg-[#b196762b] border-transparent   text-gray-900 text-sm rounded-lg focus:ring-blue-200 focus:border-blue-200 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="footer-input form-input bg-[#b196762b] border-transparent   text-gray-900 text-sm rounded-lg focus:ring-blue-200 focus:border-blue-200 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
           name="email"
           type="email"
-          placeholder=" subscribe for latest auction  @Your email address..."
+          placeholder=" Subscribe for latest auction  @Your email address..."
           value={email}
           onChange={handleEmailChange}
           required

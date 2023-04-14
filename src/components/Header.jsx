@@ -33,7 +33,7 @@ const Header = () => {
         <div className="logo-section">
           <Link to="/">
             {" "}
-            <h1 className="logo">Bucephalus numismatic</h1>
+            <h1 className="logo font-all">Bucephalus numismatic</h1>
           </Link>
 
           <div className="">
@@ -54,25 +54,25 @@ const Header = () => {
         
           <ul>
             <Link to="/">
-              <li className="li li-links" onClick={handleToggle}>
+              <li className="li li-links font-all" onClick={handleToggle}>
                 Home
               </li>
             </Link>
             <hr className="hr border" />
             <Link to="/archive">
-              <li className="li li-links" onClick={handleToggle}>
+              <li className="li li-links font-all" onClick={handleToggle}>
                 Archives
               </li>
             </Link>
             <hr className="hr border" />
             <Link to="/lots">
-              <li className="li li-links" onClick={handleToggle}>
+              <li className="li li-links font-all" onClick={handleToggle}>
                 Lots
               </li>
             </Link>
             <hr className="hr border" />
             <Link to="/faq">
-              <li className="li li-links" onClick={handleToggle}>
+              <li className="li li-links font-all" onClick={handleToggle}>
                 Faq
               </li>
             </Link>
@@ -84,18 +84,19 @@ const Header = () => {
             </Link> */}
             <hr className="hr border" />
             <Link to="/account">
-              <li className="li li-links" onClick={handleToggle}>
+              <li className="li li-links font-all" onClick={handleToggle}>
                 MY Account
               </li>
             </Link>
           </ul>
 
-          <div className="--rel relative  bg-[#0e0e63]  rounded  w-[50%]">
+          <div className="--rel relative  w-[50%]">
 
             <div className="flex flex-row justify-center gap-[17px]  " style={{alignItems:'center'}}>
-             <Link to="/login"> <p className="text-white cursor-pointer">Login</p></Link>
-             <Link to="/archive"> <FaRegHeart className="text-white cursor-pointer"/></Link>
+             <Link to="/login"> <p className="text-white cursor-pointer font-all">Login</p></Link>
+             <Link to="/wishlist"> <FaRegHeart className="text-white cursor-pointer"/></Link>
              <Link to="/mycart"><FaShoppingCart className="text-white cursor-pointer"/></Link> 
+
             </div>
           </div>
         </div>

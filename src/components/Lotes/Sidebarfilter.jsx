@@ -1,5 +1,5 @@
-import React ,{useState}from "react";
-import { FaFilter } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaFilter } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
 // Link
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -8,41 +8,35 @@ export const Sidebarfilter = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   return (
-  <>
-  <section className="col-span-12 lg:col-span-3 overflow-hidden">
-  {/* position: absolute;
+    <>
+      <section className="col-span-12 lg:col-span-3 overflow-hidden">
+        {/* position: absolute;
     top: -285px;
     left: 28px;               Filters */}
-                      <button
-        className="block sm:hidden  bottom-[-67.75rem]  text-black"
-        onClick={() => setIsFilterOpen(!isFilterOpen)}
-      >
-        <FaFilter size={20} />
-      </button>
+        <button
+          className="block sm:hidden  bottom-[-67.75rem]  text-black"
+          onClick={() => setIsFilterOpen(!isFilterOpen)}
+        >
+          <FaFilter size={20} />
+        </button>
 
-      <div className={`p-6 shadow ${isFilterOpen ? 'block' : 'hidden'} sm:block`}>
- 
-                {/* Add Lot */}
-                {/* Filters */}
-                <form
-                  x-ref="filterForm"
-                  x-on:submit="event.preventDefault();"
-                  className="space-y-4"
-                >
+        <div
+          className={`p-6 shadow ${isFilterOpen ? "block" : "hidden"} sm:block`}
+        >
+          {/* Add Lot */}
+          {/* Filters */}
+          <form className="space-y-4">
                   {/* Available for immediate purchase */}
                   <div className="p-1 mt-1">
                     <div className="inline-flex items-center space-x-2">
-                      <input
-                        className="select-none cursor-pointer focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                        id="Available for immediate purchase"
-                        name="Available for immediate purchase"
-                        type="checkbox"
-                        defaultValue=""
-                        x-model="filters.Available for immediate purchase"
-                        x-on:change="getObjects()"
-                      />{" "}
+                    <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                        
+                          />{" "}
                       <label
-                        className="select-none cursor-pointer block text-sm "
+                        className="select-none cursor-pointer block text-sm font-all "
                         htmlFor="Available for immediate purchase"
                         style={{ fontSize: "13px" }}
                       >
@@ -53,17 +47,14 @@ export const Sidebarfilter = () => {
                   {/* Lots auctioned on website */}
                   <div className="p-1 mt-1">
                     <div className="inline-flex items-center space-x-2">
-                      <input
-                        className="select-none cursor-pointer focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                        id="Lots auctioned on website"
-                        name="Lots auctioned on website"
-                        type="checkbox"
-                        defaultValue=""
-                        x-model="filters.Lots auctioned on website"
-                        x-on:change="getObjects()"
-                      />{" "}
+                    <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                           
+                          />
                       <label
-                        className="select-none cursor-pointer block text-sm font-medium"
+                        className="font-all   select-none cursor-pointer block text-sm font-medium"
                         htmlFor="Lots auctioned on website"
                       >
                         Lots auctioned on website
@@ -74,8 +65,100 @@ export const Sidebarfilter = () => {
                   {/* Order By */}
                   <div>
                     {" "}
-                    <span className="select-none block text-sm font-medium">
-                    Order by
+                    <span className="select-none block font-semibold text-sm font-[DM Serif Text', serif;]">
+                      Order by
+                    </span>{" "}
+                    <div
+                      className=" p-2 mt-1 space-y-2 border border-gray-200 rounded-md overflow-y-auto lg:h-64"
+                      style={{ height: "auto" }}
+                    >
+                      {" "}
+                      <template x-for="option in category_options" />{" "}
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-34"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            defaultValue={34}
+                          />{" "}
+                          <span className="label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Lot Number
+                          </span>{" "}
+                        </label>{" "}
+                      </div>{" "}
+                      <div> </div>{" "}
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-37"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                          />{" "}
+                          <span
+                            x-text="option.category"
+                            className="label-checked:font-bold select-none block text-sm font-medium"
+                          >
+                            Country
+                          </span>{" "}
+                        </label>{" "}
+                      </div>{" "}
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-38"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Title
+                          </span>{" "}
+                        </label>{" "}
+                      </div>{" "}
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Current Price
+                          </span>{" "}
+                        </label>{" "}
+                      </div>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  {/* jump_to_lot_number */}
+                  {/* id */}
+                  {/* Country */}
+                  <div>
+                    {" "}
+                    <span className="font-all select-none block text-sm   font-semibold font-[DM Serif Text', serif;]">
+                      Categories
                     </span>{" "}
                     <div
                       id="category"
@@ -86,7 +169,6 @@ export const Sidebarfilter = () => {
                       <div>
                         {" "}
                         <label
-                          x-bind:for="'categories-' + option.id"
                           className="inline-flex items-center block space-x-2"
                           htmlFor="categories-33"
                         >
@@ -95,28 +177,18 @@ export const Sidebarfilter = () => {
                             name="categories"
                             type="checkbox"
                             className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
                             htmlFor="categories-33"
-                            defaultValue={33}
                             id="categories-33"
                           />{" "}
-                          <span
-                            x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
-                          >
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
                             {" "}
-                          Lot Number ASC
+                            Greek
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
                       <div>
                         {" "}
                         <label
-                          x-bind:for="'categories-' + option.id"
                           className="inline-flex items-center block space-x-2"
                           htmlFor="categories-34"
                         >
@@ -125,21 +197,10 @@ export const Sidebarfilter = () => {
                             name="categories"
                             type="checkbox"
                             className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-34"
-                            defaultValue={34}
-                            id="categories-34"
                           />{" "}
-                          <span
-                            x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
-                          >
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
                             {" "}
-                            Lot Number DESC
+                             Roman
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
@@ -148,28 +209,22 @@ export const Sidebarfilter = () => {
                         <label
                           x-bind:for="'categories-' + option.id"
                           className="inline-flex items-center block space-x-2"
-                          htmlFor="categories-25"
+                          htmlFor="categories-"
                         >
                           {" "}
                           <input
                             name="categories"
                             type="checkbox"
                             className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-25"
+                            htmlFor="categories-"
                             defaultValue={25}
-                            id="categories-25"
+                            id="categories-"
                           />{" "}
                           <span
                             x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
+                            className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer"
                           >
-                           
-                           Country ASC
+                            Roman Republic
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
@@ -177,29 +232,22 @@ export const Sidebarfilter = () => {
                         {" "}
                         <label
                           x-bind:for="'categories-' + option.id"
-                          className="inline-flex items-center block space-x-2"
+                          className="font-all inline-flex items-center block space-x-2"
                           htmlFor="categories-37"
                         >
                           {" "}
                           <input
                             name="categories"
                             type="checkbox"
-                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-37"
+                            className="font-all select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
                             defaultValue={37}
                             id="categories-37"
                           />{" "}
                           <span
                             x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
+                            className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer"
                           >
-                              Country DESC
-                            
+                            Roman Imperial
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
@@ -207,7 +255,7 @@ export const Sidebarfilter = () => {
                         {" "}
                         <label
                           x-bind:for="'categories-' + option.id"
-                          className="inline-flex items-center block space-x-2"
+                          className="font-all inline-flex items-center block space-x-2"
                           htmlFor="categories-38"
                         >
                           {" "}
@@ -215,21 +263,15 @@ export const Sidebarfilter = () => {
                             name="categories"
                             type="checkbox"
                             className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-38"
                             defaultValue={38}
                             id="categories-38"
                           />{" "}
                           <span
                             x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
+                            className="label-checked:font-bold select-none block text-sm font-medium cursor-pointerfont-all "
                           >
                             {" "}
-                         Title ASC
+                            Roman Provincial
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
@@ -244,22 +286,16 @@ export const Sidebarfilter = () => {
                           <input
                             name="categories"
                             type="checkbox"
-                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-123"
+                            className="font-all select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
                             defaultValue={123}
                             id="categories-123"
                           />{" "}
                           <span
                             x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
+                            className="label-checked:font-bold select-none block text-sm font-medium cursor-pointerfont-all "
                           >
                             {" "}
-                       Title DESC
+                            Byzantine
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
@@ -275,128 +311,80 @@ export const Sidebarfilter = () => {
                             name="categories"
                             type="checkbox"
                             className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-122"
-                            defaultValue={122}
-                            id="categories-122"
                           />{" "}
-                          <span
-                            x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
-                          >
+                          <span className="label-checked:font-bold select-none block text-sm font-medium cursor-pointerfont-all ">
                             {" "}
-                         Current price ASC
+                            Medieval & Islamic
                           </span>{" "}
                         </label>{" "}
                       </div>{" "}
                       <div>
                         {" "}
                         <label
-                          x-bind:for="'categories-' + option.id"
                           className="inline-flex items-center block space-x-2"
                           htmlFor="categories-129"
                         >
                           {" "}
                           <input
-                            name="categories"
                             type="checkbox"
                             className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
-                            x-bind:for="'categories-' + option.id"
-                            x-bind:value="option.id"
-                            x-bind:checked="filters.categories.includes(String(option.id))"
-                            x-bind:id="'categories-' + option.id"
-                            x-on:change="loadCategories()"
-                            htmlFor="categories-129"
-                            defaultValue={129}
-                            id="categories-129"
                           />{" "}
-                          <span
-                            x-text="option.category"
-                            className="label-checked:font-bold select-none block text-sm font-medium"
-                          >
+                          <span className="label-checked:font-bold select-none block text-sm font-medium cursor-pointerfont-all ">
                             {" "}
-                        Current Price DSC
+                            Antiquities
                           </span>{" "}
                         </label>{" "}
-                      </div>{" "}
-                      
-                      
+                      </div>
+{/*  */}
+<div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-129"
+                        >
+                          {" "}
+                          <input
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                          />{" "}
+                          <span className="label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                           Lots
+                          </span>{" "}
+                        </label>{" "}
+                      </div>
                     </div>{" "}
-                  </div>{" "}
-                  {/* jump_to_lot_number */}
-                  {/* id */}
-                  {/* Country */}
-                  <div>
-                   <label
-                      htmlFor="country"
-                      className="select-none block text-sm font-medium"
-                    >
-                      Categories
-                    </label>{" "}
-                    <select
-                      id="country"
-                      className="block w-full border-gray-200 bg-white dark:bg-night-900 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 sm:text-sm"
-                      x-ref="country"
-                      x-model="filters.country"
-                      x-on:change="getObjects()"
-                    >
-                  <option value="" selected="selected">
-                        Categories
-                      </option> 
-                      <option x-text="value.country"></option>
-
-                      <option x-text="value.country" value="NU">
-                        Greek
-                      </option>
-                      <option x-text="value.country" value="NIE">
-                        Roman
-                      </option>
-                      <option x-text="value.country" value="NO">
-                        Republic
-                      </option>
-                      <option x-text="value.country" value="OM">
-                        Imperial
-                      </option>
-                      <hr className="border-1 opacity-5	" />
-                      <option x-text="value.country" value="OTTEMP">
-                        Provinical
-                      </option>
-                    </select>
                   </div>
                   {/* Categories */}
                   <div className="flex flex-col">
-                    <p>Byzantine</p>
+                    <p className="cursor-pointer p-[3px]  font-all">Byzantine</p>
                     <hr className="border-1" />
-                    <p className="mt-1">Medieval</p>
-                    <hr className="border-1" />
-
-                    <p className="mt-1">Islamic</p>
+                    <p className="mt-1 cursor-pointer p-[3px]  font-all">Medieval</p>
                     <hr className="border-1" />
 
-                    <p className="mt-1">Antiquities</p>
+                    <p className="mt-1 cursor-pointer p-[3px]  font-all">Islamic</p>
                     <hr className="border-1" />
 
-                    <p className="mt-1">Lots</p>
+                    <p className="mt-1 cursor-pointer p-[3px]  font-all">Antiquities</p>
                     <hr className="border-1" />
 
-                 <Link to="/archive">   <p className=" cursor-pointer realtive top-2 flex flex-row align-middle gap-5 ">
-                      view more option{" "}
-                      <span>
-                        {" "}
-                        <FaLongArrowAltRight className="relative top-1" />
-                      </span>
-                    </p>
+                    <p className="mt-1 cursor-pointer p-[3px]  font-all">Lots</p>
+                    <hr className="border-1" />
+
+                    <Link to="/archive">
+                      {" "}
+                      <p className="   font-all cursor-pointer relative top-2 flex flex-row align-middle gap-5 cursor-pointer ">
+                        view more option{" "}
+                        <span>
+                          {" "}
+                          <FaLongArrowAltRight className="relative top-1" />
+                        </span>
+                      </p>
                     </Link>
                   </div>
                 </form>
-            
-      </div>
+        </div>
       </section>
-  
-  </>
-  )
-}
+    </>
+  );
+};

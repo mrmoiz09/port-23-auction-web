@@ -57,7 +57,7 @@ export const Lotpage = () => {
       {/* product section starting cmain tetx*/}
       <div className="bg-slate-200 md:p-[37px] sm:p-[2px]">
         <h1
-          className="  	 font-[initial] md:absolute lg:absolute sm:relative  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
+          className="  	 font-all md:absolute lg:absolute sm:relative  ml-[36px] sm:text-[auto] md:text-[23px] mt-[-4px] border-4 border-b-border-black"
           style={{ borderBottom: "2px solid" }}
         >
           Lots

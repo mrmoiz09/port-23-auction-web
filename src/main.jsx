@@ -5,6 +5,8 @@ import './index.css'
 import './css/responsive.css'
 import "./css/swipercard.css"
 import "./css/Form.css"
+// import "./css/Animate.css"
+// import "./css/swipe.css"
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />

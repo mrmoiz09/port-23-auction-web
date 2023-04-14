@@ -210,7 +210,7 @@ const Bidpage = () => {
                 </span>
               </div>
               <hr className="border-2" />
-              <h1 className="font-[initial] text-3xl font-semibold  pb-5">
+              <h1 className="font-[initial] text-3xl font-semibold  pb-5 font-response-sm">
                 Place a Bid
               </h1>
             </div>

@@ -60,7 +60,7 @@ export const Accountbid = () => {
           <Sidebaraccount />
         </div>
         <div className="child-2">
-          <h2 className="text-2xl uppercase ml-2">my bids</h2>
+          <h2 className="text-2xl uppercase ml-2 font-all">my bids</h2>
           <hr className="border-1 mt-2 w-[100%]" />
 
           <div className="custom-llg flex flex-row lg:gap-[39.5rem] mt-5 justify-center">

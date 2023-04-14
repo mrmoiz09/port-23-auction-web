@@ -74,13 +74,13 @@ export const Profileaccount = () => {
             <div className="flex flex-row-justify-center gap-3">
               <button
                 style={{ fontSize: "12px", padding: "6px" }}
-                className="bg-[#2e0d23]  text-white rounded "
+                className="bg-[#2e0d23]  text-white rounded button-lg "
               >
                 verify now
               </button>
               <button
                 style={{ fontSize: "12px", padding: "4px" }}
-                className="bg-slate-300  text-black rounded "
+                className="bg-slate-300  text-black rounded button-llgs shadow-x "
               >
                 change
               </button>
@@ -91,7 +91,8 @@ export const Profileaccount = () => {
             style={{ opacity: "0.7" }}
           />
 
-          <div className="flex flex-row justify-start  lg:gap-28px md:gap-28px  mt-[20px] .custom-child-gap">
+          <div className="flex flex-row justify-start  lg:gap-28px md:gap-28px  mt-[20px] .custom-child-gap profile-llgs profile-reflex
+          ">
             <div className="child-1">
               <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                 <svg
@@ -109,7 +110,7 @@ export const Profileaccount = () => {
               </div>
             </div>
 
-            <div className="child-2">
+            <div className="child-2 child-reflex">
               <h5>
                 Full Name{" "}
                 <span className="relative top-3px custom-rel">no company</span>
@@ -119,7 +120,7 @@ export const Profileaccount = () => {
             <div className="child-3">
               <button
                 style={{ fontSize: "12px", padding: "4px" }}
-                className="bg-slate-300  text-black rounded "
+                className="bg-slate-300  text-black rounded button-lg-verified "
               >
                 not Verified yet
               </button>
@@ -137,8 +138,8 @@ export const Profileaccount = () => {
                   Login
                 </label>
                 <input
-                  className="input ."
-                  type="email"
+                  className="input fa-input login--input"
+                   type="email"
                   id="email"
                   name="email"
                   required=""
@@ -146,24 +147,24 @@ export const Profileaccount = () => {
               </div>
 
               <div className="form-group emails">
-                <label className="label" htmlFor="password">
+                <label className="label" >
                   Email
                 </label>
                 <input
-                  placeholder="jhondoe@"
-                    className="input input-L"
+                  placeholder="jhondoe@gmail.com"
+                    className="input input-L fa-input  sm:w-[236px] "
                   type="email"
                   id="email"
                   name="email"
                   required=""
                 />
               </div>
-              <div className="form-group passwords">
+              <div className="form-group passwords mb-[41px]" style={{marginBottom:'40px'}}>
                 <label className="label" htmlFor="contact">
                   Password
                 </label>
                 <input
-                    className="input input-L"
+                    className="input input-L input-contact fa-input pass-input"
                   placeholder="****"
                   type="text"
                   id="contact"
@@ -176,7 +177,7 @@ export const Profileaccount = () => {
                 </label>
                 <input
                   placeholder="not enable"
-                    className="input input-L"
+                    className="input input-L address-input-d fa-input"
                   type="text"
                   id="2FA"
                   disabled
@@ -193,7 +194,7 @@ export const Profileaccount = () => {
                   name="email"
                   required=""
                 />
-                <button className=" bg-slate-200 rounded p-1">change</button>
+                <button className=" bg-slate-200 rounded p-1 button-llgs shadow-x button-change-llg">Change</button>
               </div>
               <div className="form-group">
                 <label className="label" htmlFor="email">
