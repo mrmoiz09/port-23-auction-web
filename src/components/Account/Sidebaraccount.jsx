@@ -12,51 +12,50 @@ export const Sidebaraccount = () => {
 
   return (
     <>
-      <div className="w-fit w-custom  ">
+      <div className="w-fit w-custom">
         {/* Mobile Toggle Button */}
         <button className="mobile-toggle-btn" onClick={handleToggle}>
-          {showNav ? <FaEyeSlash className="relative" /> : <FaFilter className="relative" />}
+          {showNav ? (
+            <FaEyeSlash className="relative" />
+          ) : (
+            <FaFilter className="relative" />
+          )}
         </button>
 
         {/* Sidebar */}
-        <Sidebar 
+        <Sidebar
           aria-label=""
-          className={`  sidebar${showNav ? " is-open" : ""}`}
-        >    
-       
-          <Sidebar.Items >
+          className={`sidebar${showNav ? " is-open" : ""}`}
+        >
+          <Sidebar.Items>
             <Sidebar.ItemGroup>
               <Link to="/accountbid" className="bg-[#d0b290] rounded">
                 <Sidebar.Item>My Bids</Sidebar.Item>
               </Link>
               <hr className="border-1" />
               <Link to="/accountwatchlist">
-                <Sidebar.Item   >
-                  My Watchlist
-                </Sidebar.Item>
+                <Sidebar.Item>My Watchlist</Sidebar.Item>
               </Link>
               <hr className="border-1" />
 
               <Link to="/accountinvoices">
-                <Sidebar.Item >
-                  My Invoices
-                </Sidebar.Item>
+                <Sidebar.Item>My Invoices</Sidebar.Item>
               </Link>
               <hr className="border-1" />
 
               <Link to="/consigmentsaccount">
-                <Sidebar.Item>My Consigmets</Sidebar.Item>
+                <Sidebar.Item>My Consignments</Sidebar.Item>
               </Link>
 
               <Link to="/accountapproval">
                 <hr className="border-1" />
-                <Sidebar.Item >My Approval</Sidebar.Item>
+                <Sidebar.Item>My Approval</Sidebar.Item>
               </Link>
 
               <hr className="border-1" />
 
               <Link to="/Profileaccount">
-                <Sidebar.Item >My Profile</Sidebar.Item>
+                <Sidebar.Item>My Profile</Sidebar.Item>
               </Link>
 
               <hr className="border-1" />
@@ -73,19 +72,19 @@ export const Sidebaraccount = () => {
             top: 10rem;
             right: 0;
             padding: 10px;
-           
+
             border: none;
             cursor: pointer;
             z-index: 9999;
           }
 
           .sidebar {
-            position: absolute;
+            position: fixed;
             top: 60px;
             left: 0;
             width: 100%;
             height: calc(100% - 60px);
-            overflow-y: auto;
+            overflow-y: scroll; /* add scroll property */
             transform: translateX(-100%);
             transition: transform 0.3s ease-in-out;
             z-index: 9998;
@@ -110,6 +109,11 @@ export const Sidebaraccount = () => {
               transform: initial;
               transition: initial;
               z-index: initial;
+            }
+
+            /* Add padding to content area to push it to the right */
+            .content {
+              padding-left: 200px;
             }
           }
         `}

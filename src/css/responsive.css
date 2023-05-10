@@ -231,6 +231,21 @@ margin-top: 48px;
   margin-top: 24px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
+
+.cart-2{
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin-top: 24px;
+
+  height: 40px;
+  padding: 6px;
+  color:#2e0d23;
+  border-radius: 10px;
+  background: #f1f5f9;
+
+
+}
+
 @media only screen and (max-width: 767px) {
   .custom-child-1{
 

@@ -56,7 +56,7 @@ export const Accountbid = () => {
         </form>
       </div>
       <div className="flex flex-row justify-center lg:gap-[10rem] mb-[107px]">
-        <div className="child-1 child-border border-r lg:h-[40vh] border-black ">
+        <div className="child-1 child-border   lg:border-r lg:lg:h-[40vh] border-black ">
           <Sidebaraccount />
         </div>
         <div className="child-2">

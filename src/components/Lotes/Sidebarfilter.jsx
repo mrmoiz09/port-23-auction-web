@@ -278,6 +278,47 @@ export const Sidebarfilter = () => {
                       <div>
                         {" "}
                         <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-33"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            htmlFor="categories-33"
+                            id="categories-33"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Newly listed
+                          </span>{" "}
+                        </label>{" "}
+                      </div>
+
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-33"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            htmlFor="categories-33"
+                            id="categories-33"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Ending soon
+                          </span>{" "}
+                        </label>{" "}
+                      </div>
+                      <div>
+                        {" "}
+                        <label
                           x-bind:for="'categories-' + option.id"
                           className="inline-flex items-center block space-x-2"
                           htmlFor="categories-123"
@@ -350,6 +391,48 @@ export const Sidebarfilter = () => {
                           <span className="label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
                             {" "}
                            Lots
+                          </span>{" "}
+                        </label>{" "}
+                      </div>
+
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-33"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            htmlFor="categories-33"
+                            id="categories-33"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Newly listed
+                          </span>{" "}
+                        </label>{" "}
+                      </div>
+
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-33"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            htmlFor="categories-33"
+                            id="categories-33"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Ending soon
                           </span>{" "}
                         </label>{" "}
                       </div>

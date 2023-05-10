@@ -62,7 +62,7 @@ export const Accountwatchlist = () => {
       </div>
 
       <div className="flex flex-row justify-center lg:gap-[10rem] mb-[107px]">
-        <div className="child-1  border-r lg:h-[40vh] border-black">
+        <div className="child-1  lg:border-r lg:h-[40vh] border-black">
           <Sidebaraccount />
         </div>
         <div className="child-2">
@@ -102,9 +102,9 @@ export const Accountwatchlist = () => {
     <br />
 
     <br />
-
-    
-    
+<br />
+    <br />
+    <br />
     </>
   )
 }

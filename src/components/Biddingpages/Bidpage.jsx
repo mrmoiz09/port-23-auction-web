@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import { FaSearch } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import { FaHeart } from "react-icons/fa";
@@ -9,6 +10,8 @@ import { Link } from "react-router-dom";
 import { Otherlot } from "../Lotes/Otherlot";
 // Link
 const Bidpage = () => {
+  const [countdown, setCountdown] = useState(null);
+
   const [jumpForLot, setJumpForLot] = useState("");
   const [search, setSearch] = useState("");
 
@@ -49,7 +52,26 @@ const Bidpage = () => {
       progress: undefined,
     });
   };
+  useEffect(() => {
+    const endDate = new Date("2023-06-01T00:00:00");
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      const diff = endDate - now;
 
+      if (diff < 0) {
+        clearInterval(intervalId);
+        setCountdown("Expired");
+      } else {
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+        setCountdown(`${days}d ${hours}h ${minutes}m ${seconds}s`);
+      }
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
   return (
     <>
       <div className="flex flex-row p-4 justify-end">
@@ -95,7 +117,7 @@ const Bidpage = () => {
               <img
                 src={activeImg}
                 alt=""
-                className="w-full custom-img22  md:h-[228px] aspect-square object-cover rounded-xl"
+                className="w-full lg:custom-img22  h-[215px] lg:p-[auto] aspect-square object-cover rounded-xl"
               />
               <div className="flex flex-row justify-bcenter h-24">
                 <img
@@ -115,20 +137,17 @@ const Bidpage = () => {
               </div>
             </div>
             <hr className="border" />
-<div className="flex flex-row  items-center gap-4 ml-12  lg:mt-[-58px]	">
-<div className="c-1">
-  <FaHeart/>
-</div>
-<div className="c-2">
-             <p className="text-black ">    Add to wishlist</p>
-             </div>
-      
-             </div>
+            <div className="flex flex-row  items-center gap-4 ml-12  lg:mt-[-58px]	">
+              <div className="c-1">
+                <FaHeart />
+              </div>
+              <div className="c-2">
+                <p className="text-black "> Add to wishlist</p>
+              </div>
+            </div>
             <div className="flex flex-col gap-3 lg:w-2/4 align-middle relative md:left-[50px] custom-relative">
               <div>
-                
                 <h1 className="">Description </h1>
-               
               </div>
               {/* <hr /> */}
               <p className="text-gray-700">
@@ -136,32 +155,35 @@ const Bidpage = () => {
                 percorso preferito e fare ritorno a casa carico di energia, in
                 attesa della prossima corsa.
               </p>
-            <h1  className="font-[initial] text-3xl font-semibold  pb-5 mt-3">Ask about this Lot</h1>
-            <p style={{opacity:'0.8'}} >contact the auction house to leave text here </p>
-            <div style={{ position: "relative" }}>
-  <textarea
-    className="rounded"
-    name=""
-    id=""
-    cols="90"
-    rows="5"
-    style={{ marginBottom: "30px" }}
-  ></textarea>
-  <button
-    style={{
-      position: "absolute",
-      bottom: "39px",
-      right: "-302px",
-      padding: "5px 10px",
-      backgroundColor: "#2e0d23",
-      color: "white",
-      borderRadius: "5px",
-    }}
-  >
-    Send Message
-  </button>
-</div>
-
+              <h1 className="font-[initial] text-3xl font-semibold  pb-5 mt-3">
+                Ask about this Lot
+              </h1>
+              <p style={{ opacity: "0.8" }}>
+                contact the auction house to leave text here{" "}
+              </p>
+              <div style={{ position: "relative" }}>
+                <textarea
+                  className="rounded"
+                  name=""
+                  id=""
+                  cols="90"
+                  rows="5"
+                  style={{ marginBottom: "30px" }}
+                ></textarea>
+                <button
+                  style={{
+                    position: "absolute",
+                    bottom: "39px",
+                    right: "-302px",
+                    padding: "5px 10px",
+                    backgroundColor: "#2e0d23",
+                    color: "white",
+                    borderRadius: "5px",
+                  }}
+                >
+                  Send Message
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -171,9 +193,40 @@ const Bidpage = () => {
             id="summary"
             className="w- px-8 py-10 md:mt-[-70px]  lg:mt-[-70px]  lg:ml-5  bg-slate-100 "
           >
-            <h1 className="font-[initial] text-3xl font-semibold  pb-5 realtve lg:top-[-28px] md:mb-5">
-              BUY NOW
-            </h1>
+            <div className="flex flex-row lg:items-center lg:justify-center">
+              <h1 className="font-[initial] text-3xl font-semibold  pb-5 realtve lg:top-[-28px] md:mb-5">
+                Bid Now
+              </h1>
+              <p className="absolute left-[16rem]  top-[63px] lg:top-[11px] lg:mb-[-23px] lg:left-[19rem] font-[initial] border-t-2 border-dashed   border-gray-500  text-center lg:w-[150px]">
+      time left for bid
+    </p>
+              {/* <hr  classNam/'e="border border-gray-500 border-dashed absolute"/> */}
+
+              <div className="hidden lg:block">
+                <hr className="border border-gray-500 border-dashed bid-border" />
+                {countdown ? (
+                  <div className="grid grid-cols-4   lg:w-[10rem] gap-[1rem] relative lg:bottom-[18px] left-[58px] ">
+                    {countdown.split(" ").map((item, index) => (
+                      <div
+                        key={index}
+                        className="  text-center flex items-center"
+                      >
+                        <h4 className="lg:text-[19px] font-[initial] font-semibold flex">
+                          {" "}
+                          {item.slice(0, -1)}{" "}
+                          <span className="relative left-1">
+                            {item.slice(-1)}
+                          </span>
+                        </h4>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <p>Loading countdown...</p>
+                )}
+              </div>
+            </div>
+
             <div
               className="flex flex-col justify-center"
               style={{ alignItems: "center" }}
@@ -232,7 +285,7 @@ const Bidpage = () => {
       </div>
       {/* other lots  card */}
 
-    <Otherlot/>
+      <Otherlot />
     </>
   );
 };

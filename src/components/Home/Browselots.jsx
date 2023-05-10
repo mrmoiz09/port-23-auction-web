@@ -182,7 +182,7 @@ export default function Browselots() {
                       className="h-64 p-2 mt-1 space-y-2 border border-gray-200 rounded-md overflow-y-auto lg:h-64"
                     >
                       {" "}
-                      <template x-for="option in category_options" />{" "}
+                      <template/>
                       <div>
                         {" "}
                         <label
@@ -202,7 +202,7 @@ export default function Browselots() {
                             Greek
                           </span>{" "}
                         </label>{" "}
-                      </div>{" "}
+                      </div>
                       <div>
                         {" "}
                         <label
@@ -367,6 +367,51 @@ export default function Browselots() {
                           <span className="label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
                             {" "}
                            Lots
+                          </span>{" "}
+                        </label>{" "}
+                        {/*  */}
+                        
+                      </div>
+
+
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-33"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            htmlFor="categories-33"
+                            id="categories-33"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Newly listed
+                          </span>{" "}
+                        </label>{" "}
+                      </div>
+
+                      <div>
+                        {" "}
+                        <label
+                          className="inline-flex items-center block space-x-2"
+                          htmlFor="categories-33"
+                        >
+                          {" "}
+                          <input
+                            name="categories"
+                            type="checkbox"
+                            className="select-none focus:ring-yellow-500 h-4 w-4 text-yellow-500 border-gray-200 rounded"
+                            htmlFor="categories-33"
+                            id="categories-33"
+                          />{" "}
+                          <span className="font-all label-checked:font-bold select-none block text-sm font-medium cursor-pointer">
+                            {" "}
+                            Ending soon
                           </span>{" "}
                         </label>{" "}
                       </div>

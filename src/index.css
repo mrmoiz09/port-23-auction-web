@@ -123,3 +123,11 @@
   font-weight: bold;
   /* font-family: cicular; */
 }
+
+.bid-border{
+  transform: rotate(89deg);
+  width: 71px;
+  position: relative;
+  /* left: 146px; */
+  top: -7px;
+}

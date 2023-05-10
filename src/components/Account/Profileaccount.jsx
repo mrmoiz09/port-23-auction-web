@@ -56,7 +56,7 @@ export const Profileaccount = () => {
       </div>
 
       <div className=" .cutom-cd flex flex-row justify-evenly  lg:w-[161vh]  md:w-[161vh]   mb-[107px]">
-        <div className="child-1 border-r lg:h-[100vh] border-black">
+        <div className="child-1 border-r lg:h-[100vh] lg:border-black">
           <Sidebaraccount  />
         </div>
         <div className="child-2 lg:w-[85vh] custom-child-">

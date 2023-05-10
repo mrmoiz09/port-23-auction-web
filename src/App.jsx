@@ -26,7 +26,8 @@ import { Endinglotpage } from "./components/Home/Endinglotpage";
 import { Newlistingpage } from "./components/Home/Newlistingpage";
 import Example from "./components/Faqpage/Example";
 
-
+const oneWeekFromNow = new Date();
+oneWeekFromNow.setDate(oneWeekFromNow.getDate() + 7);
 function App() {
   const [count, setCount] = useState(0);
 
@@ -38,7 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/archive" element={<Archives />} />
           <Route path="/lots" element={<Lotpage />} />
-          <Route path="/Productpage" element={<ProductPage />} />
+          <Route path="/Productpage" element={<ProductPage/>} />
         <Route path="/faq" element={<Example/>}  />
           <Route path="/cartpage" element={<Cartpage />} />
           <Route path="/account" element={<Accountbid />} />
