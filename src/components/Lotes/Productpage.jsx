@@ -181,7 +181,7 @@ const ProductPage = () => {
       time left for bid
     </p>
     <div className=" lg:block">
-      <hr className="hidden lg:block border border-gray-500 border-dashed bid-border" />
+      <hr className=" lg:block border border-gray-500 border-dashed bid-border" />
       <div className="grid grid-cols-4 w-[126px]  lg:w-[10rem] gap-[1rem] relative lg:bottom-[18px] lg:left-[58px] left-[24px] ">
         <div className="  text-center flex items-center">
           <h4 className="lg:text-[19px] font-[initial] font-semibold flex">
@@ -239,7 +239,7 @@ const ProductPage = () => {
 
             <Link to="/mycart">
                 <button
-                  className="         bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full  relative top-5 md:left-[70px] flex-row"
+                  className="         bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full  relative top-5 md:lg:left-[70px]  left-[7px] flex-row"
                   style={{ marginleft: "81px" }}
                 >
                   Proceed to check-out

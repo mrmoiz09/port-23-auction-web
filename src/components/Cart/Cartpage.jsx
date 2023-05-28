@@ -121,7 +121,7 @@ export const Cartpage = () => {
             </div>
             <Link to="/mycart">
                 <button
-                  className="         bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full  relative top-5 md:left-[70px] flex-row"
+                  className="         bg-[#2e0d23] text-white font-semibold py-3 px-16 rounded-xl h-full  relative top-5 md:lg:left-[70px]  left-[7px] flex-row"
                   style={{ marginleft: "81px" }}
                 >
                   Proceed to check-out

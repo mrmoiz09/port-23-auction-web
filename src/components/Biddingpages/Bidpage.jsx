@@ -72,6 +72,19 @@ const Bidpage = () => {
 
     return () => clearInterval(intervalId);
   }, []);
+  useEffect(() => {
+    // Scroll to the top of the window
+    window.scrollTo(0, 0);
+
+    // Clear the scroll after 1 second
+    const timeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 1000);
+
+    // Clean up the timeout on component unmount
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <div className="flex flex-row p-4 justify-end">
@@ -202,7 +215,7 @@ const Bidpage = () => {
     </p>
               {/* <hr  classNam/'e="border border-gray-500 border-dashed absolute"/> */}
 
-              <div className="hidden lg:block">
+              <div className=" lg:block">
                 <hr className="border border-gray-500 border-dashed bid-border" />
                 {countdown ? (
                   <div className="grid grid-cols-4   lg:w-[10rem] gap-[1rem] relative lg:bottom-[18px] left-[58px] ">

@@ -133,7 +133,7 @@ margin-top: 48px;
     position: relative;
     right: 15px;
   }
-  .current-position{
+  .lg:current-position{
     gap: 47px;
   }
   .custom-llg{
@@ -355,7 +355,7 @@ button:hover {
 .hr-border-transform{
   transform: rotate(89.5deg);
 }
-.current-position{
+.lg:current-position{
   
   position: relative;
   top: 20px;

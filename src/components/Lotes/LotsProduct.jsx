@@ -89,7 +89,7 @@ export const LotsProduct = () => {
                   </button>
                 </Link>
               </div>
-              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items">
+              <div class="flex flex-row ga-5 lg:gap-[55px] lg:mt-2 gap-[59px]   lg:current-position lot-page-price-items">
                 <span class="font-bold font-shadow-y">Current bid 20$</span>
                 <span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm">
                   {" "}
@@ -183,7 +183,7 @@ export const LotsProduct = () => {
                   </button>
                 </Link>
               </div>
-              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+              <div class="flex flex-row ga-5 lg:gap-[55px] lg:mt-2 gap-[59px]   lg:current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
 
             </div>
           </div>
@@ -272,7 +272,7 @@ export const LotsProduct = () => {
                   </button>
                 </Link>
               </div>
-              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+              <div class="flex flex-row ga-5 lg:gap-[55px] lg:mt-2 gap-[59px]   lg:current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
 
             </div>
           </div>
@@ -361,7 +361,7 @@ export const LotsProduct = () => {
                   </button>
                 </Link>
               </div>
-              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+              <div class="flex flex-row ga-5 lg:gap-[55px] lg:mt-2 gap-[59px]   lg:current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
 
             </div>
           </div>
@@ -451,7 +451,7 @@ export const LotsProduct = () => {
                   </button>
                 </Link>
               </div>
-              <div class="flex flex-row ga-5  gap-[20px]  lg:gap-[50px] current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
+              <div class="flex flex-row ga-5 lg:gap-[55px] lg:mt-2 gap-[59px]   lg:current-position lot-page-price-items"><span class="font-bold font-shadow-y">Current bid 20$</span><span class="font-bold font-shadow-y lg:left-[-17px] bid-price-sm"> Price 20$</span></div>
 
             </div>
           </div>
