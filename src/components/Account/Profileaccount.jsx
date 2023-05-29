@@ -55,11 +55,11 @@ export const Profileaccount = () => {
         </form>
       </div>
 
-      <div className=" .cutom-cd flex flex-row justify-evenly  lg:w-[161vh]  md:w-[161vh]   mb-[107px]">
+      <div className="flex lg:flex-row flex-col  justify-center lg:gap-[10rem] mb-[107px]">
         <div className="child-1 border-r lg:h-[100vh] lg:border-black">
           <Sidebaraccount  />
         </div>
-        <div className="child-2 lg:w-[85vh] custom-child-">
+        <div className="child-2  lg:w-[85vh] custom-child- lg:m-0 mx-auto">
           <h2 className="text-2xl uppercase ml-2">My Profile</h2>
           <hr
             className="border-gray-300 border lg:mt-7"

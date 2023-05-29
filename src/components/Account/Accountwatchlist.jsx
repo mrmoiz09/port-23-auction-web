@@ -61,7 +61,7 @@ export const Accountwatchlist = () => {
         </form>
       </div>
 
-      <div className="flex flex-row justify-center lg:gap-[10rem] mb-[107px]">
+      <div className="flex lg:flex-row flex-col  justify-center lg:gap-[10rem] mb-[107px]">
         <div className="child-1  lg:border-r lg:h-[40vh] border-black">
           <Sidebaraccount />
         </div>

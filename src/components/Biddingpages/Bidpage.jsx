@@ -244,7 +244,7 @@ const Bidpage = () => {
               className="flex flex-col justify-center"
               style={{ alignItems: "center" }}
             >
-              <h3 className="text-black text-3xl ">40 Euro</h3>
+              <h3 className="text-black text-3xl ">40 €</h3>
 
               <div>
                 <button
@@ -266,13 +266,13 @@ const Bidpage = () => {
               <div className="box flex  bg-white  flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
                 <span className="font-[initial] text-2xl">Current Bid:</span>
                 <span className="font-[initial] text-2xl relative left-3">
-                  700euro
+                  700€
                 </span>
               </div>
               <div className="box  bg-white flex flex-row p-[12px] justify-center md:gap-[10rem] gap-a">
                 <span className="font-[initial] text-2xl">starting price:</span>
                 <span className="font-[initial] text-2xl relative left-2">
-                  700euro
+                  700€
                 </span>
               </div>
               <hr className="border-2" />

@@ -73,7 +73,7 @@ export const Cartpage = () => {
                   COIN NAME
                 </span>
                 <h1 className="text-3xl font-bold">Lot 420 - ‘Rare’ </h1>
-                <h6 className="text-[20px] font-semibold">5 euro</h6>
+                <h6 className="text-[20px] font-semibold">5 €</h6>
               </div>
               <hr />
               <p className="text-gray-700">
@@ -97,25 +97,25 @@ export const Cartpage = () => {
             <div className="flex flex-col gap-3 ">
               <div className="box  flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
                 <span className="font-[initial] text-2xl">Product Price:</span>
-                <span className="font-[initial] text-2xl">700euro</span>
+                <span className="font-[initial] text-2xl">700€</span>
               </div>
               {/*  */}
               <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a">
                 <span className="font-[initial] text-2xl">Current Bid:</span>
                 <span className="font-[initial] text-2xl relative left-3">
-                  700euro
+                  700€
                 </span>
               </div>
               <div className="box flex flex-row p-[12px] justify-center md:gap-[15rem] gap-a">
                 <span className="font-[initial] text-2xl">VAT:</span>
                 <span className="font-[initial] text-2xl relative left-3">
-                  700euro
+                  700€
                 </span>
               </div>
               <hr />
               <div className="box flex flex-row p-[12px] justify-center md:gap-[11rem] gap-a mt-2">
                 <span className="font-[initial] text-2xl">Total Price:</span>
-                <span className="font-[initial] text-2xl">2100euro</span>
+                <span className="font-[initial] text-2xl">2100€</span>
               </div>
               
             </div>

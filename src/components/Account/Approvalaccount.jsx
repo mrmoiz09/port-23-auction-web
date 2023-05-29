@@ -64,7 +64,7 @@ export const Approvalaccount = () => {
 {/*  */}
 
 
-      <div className="flex flex-row justify-center  gap-[5rem] mb-[107px]">
+      <div className="flex lg:flex-row flex-col  justify-center lg:gap-[10rem] mb-[107px]">
         <div className="child-1 child-border   lg:border-r lg:lg:h-[40vh] lg:border-black ">
         <Sidebaraccount/>
         </div>

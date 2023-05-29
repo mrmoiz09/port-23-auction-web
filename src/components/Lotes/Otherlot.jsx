@@ -60,7 +60,9 @@ const images = [
 
   // Add more objects for additional images
 ];
-const [countdown, setCountdown] = useState(null);
+
+export const Otherlot  = () => {
+  const [countdown, setCountdown] = useState(null);
 useEffect(() => {
   const endDate = new Date("2023-06-01T00:00:00");
   const intervalId = setInterval(() => {
@@ -81,7 +83,6 @@ useEffect(() => {
 
   return () => clearInterval(intervalId);
 }, []);
-export const Otherlot  = () => {
   return (
     <>
     
@@ -91,7 +92,7 @@ export const Otherlot  = () => {
     </h1>
     <div className="mx-auto md:mt-[4rem]  md:mb-[110px] sm:mb-[50px] custom-margin">
       <div className="flex flex-row  overflow-x-auto md:w-[134vh] mx-auto sm:relative Bottom:[30px] custom--margin">
-      {images.map((image) => (
+         {images.map((image) => (
               <div key={image.id} className="lg:col-span-3 ml-[19px]">
                 <div className="max-w-sm  md:mb-[15px]">
                   <Card className="lg:w-[40vh] w-auto">
